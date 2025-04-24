@@ -1,0 +1,14 @@
+﻿namespace Agenda.Entidades.DTOs.DTO.PacientesDTO
+{
+    public class PacienteDTO
+    {
+        public int Id { get; set; } 
+        public string Nombre { get; set; }
+        public int Dni { get; set; }
+        public string ObraSocial { get; set; }
+
+        public int Telefono { get; set; }
+
+        public string Email { get; set; }
+    }
+}
