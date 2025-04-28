@@ -98,6 +98,18 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.Use(async (context, next) =>
+{
+    await next();
+
+    if (context.Response.StatusCode == 400 && context.Response.ContentType == "application/problem+json")
+    {
+        context.Response.Body.Seek(0, SeekOrigin.Begin);
+        var body = await new StreamReader(context.Response.Body).ReadToEndAsync();
+        Console.WriteLine($"Validation Error: {body}");
+    }
+});
+
 
 app.UseCors("AllowAll");
 app.UseHttpsRedirection();

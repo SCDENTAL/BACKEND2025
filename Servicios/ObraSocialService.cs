@@ -3,6 +3,7 @@ using Agenda.Entidades;
 using Agenda.Base;
 using Microsoft.EntityFrameworkCore;
 using Agenda.Interfaces;
+using Agenda.Entidades.DTOs;
 
 namespace Agenda.Servicios
 {

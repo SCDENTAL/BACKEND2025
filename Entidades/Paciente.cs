@@ -1,4 +1,6 @@
-﻿namespace Agenda.Entidades
+﻿using Agenda.Entidades.DTOs;
+
+namespace Agenda.Entidades
 {
     public class Paciente
     {

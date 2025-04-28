@@ -1,4 +1,4 @@
-﻿   namespace Agenda.Entidades
+﻿namespace Agenda.Entidades.DTOs
 {
     public class ObraSocial
     {

@@ -1,4 +1,5 @@
 ﻿using Agenda.Entidades;
+using Agenda.Entidades.DTOs;
 using Microsoft.EntityFrameworkCore;
 
 namespace Agenda.Base
