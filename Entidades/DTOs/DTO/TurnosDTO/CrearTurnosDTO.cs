@@ -4,7 +4,7 @@
     {
       
             public string NombrePaciente { get; set; }
-            public string DniPaciente { get; set; }
+            public int DniPaciente { get; set; }
             public string ObraSocial { get; set; }
             public DateTime FechaHora { get; set; }
             public int OdontologoId { get; set; }

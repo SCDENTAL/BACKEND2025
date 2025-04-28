@@ -180,3 +180,4 @@ C:\Users\rober\source\repos\Agenda\bin\Debug\net8.0\System.Security.Cryptography
 C:\Users\rober\source\repos\Agenda\bin\Debug\net8.0\System.Security.Cryptography.Xml.dll
 C:\Users\rober\source\repos\Agenda\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
 C:\Users\rober\source\repos\Agenda\bin\Debug\net8.0\BCrypt.Net-Next.dll
+C:\Users\rober\source\repos\Agenda\obj\Debug\net8.0\Agenda.sourcelink.json

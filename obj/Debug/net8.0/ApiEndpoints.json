@@ -59,6 +59,43 @@
   },
   {
     "ContainingType": "Agenda.Controllers.ObrasSocialesController",
+    "Method": "Get",
+    "RelativePath": "api/ObrasSociales/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Agenda.Controllers.ObrasSocialesController",
+    "Method": "Put",
+    "RelativePath": "api/ObrasSociales/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "Agenda.Entidades.DTOs.DTO.ObrasSocialesDTO.EditarObraSocialDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Agenda.Controllers.ObrasSocialesController",
     "Method": "Delete",
     "RelativePath": "api/ObrasSociales/{id}",
     "HttpMethod": "DELETE",
@@ -140,6 +177,85 @@
     "ContainingType": "Agenda.Controllers.OdontologosController",
     "Method": "Delete",
     "RelativePath": "api/odontologos/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Agenda.Controllers.PacientesController",
+    "Method": "Get",
+    "RelativePath": "api/Pacientes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Agenda.Controllers.PacientesController",
+    "Method": "Post",
+    "RelativePath": "api/Pacientes",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Agenda.Entidades.DTOs.DTO.PacientesDTO.CrearPacienteDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Agenda.Controllers.PacientesController",
+    "Method": "GetById",
+    "RelativePath": "api/Pacientes/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Agenda.Controllers.PacientesController",
+    "Method": "Put",
+    "RelativePath": "api/Pacientes/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "Agenda.Entidades.DTOs.DTO.PacientesDTO.EditarPacientesDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Agenda.Controllers.PacientesController",
+    "Method": "Delete",
+    "RelativePath": "api/Pacientes/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,

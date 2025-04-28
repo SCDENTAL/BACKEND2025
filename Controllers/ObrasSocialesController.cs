@@ -32,13 +32,21 @@ namespace Agenda.Controllers
             return CreatedAtAction(nameof(Get), new { id = creada.Id }, creada);
         }
 
-        //[HttpPut("{id}")]
-        //public async Task<IActionResult> Put(int id, [FromBody] CrearObraSocialDTO dto)
-        //{
-        //    int usuarioId = GetUsuarioId();
-        //    var editada = await _service.Ed(id, dto, usuarioId);
-        //    return editada ? NoContent() : NotFound();
-        //}
+        [HttpGet("{id}")]
+        public async Task<IActionResult> Get(int id)
+        {
+            int usuarioId = GetUsuarioId();
+            var obra = await _service.ObtenerPorIdAsync(id, usuarioId);
+            return obra == null ? NotFound() : Ok(obra);
+        }
+
+        [HttpPut("{id}")]
+        public async Task<IActionResult> Put(int id, [FromBody] EditarObraSocialDTO dto)
+        {
+            int usuarioId = GetUsuarioId();
+            var editada = await _service.EditarAsync(id, dto, usuarioId);
+            return editada ? NoContent() : NotFound();
+        }
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)

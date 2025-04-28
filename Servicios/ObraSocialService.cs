@@ -17,6 +17,25 @@ namespace Agenda.Servicios
                 .Select(x => new ObraSocialDTO { Id = x.Id, Nombre = x.Nombre })
                 .ToListAsync();
 
+        public async Task<ObraSocialDTO?> ObtenerPorIdAsync(int id, int usuarioId)
+        {
+            return await _context.ObrasSociales
+                .Where(x => x.Id == id && x.UsuarioId == usuarioId)
+                .Select(x => new ObraSocialDTO { Id = x.Id, Nombre = x.Nombre })
+                .FirstOrDefaultAsync();
+        }
+
+        public async Task<bool> EditarAsync(int id, EditarObraSocialDTO dto, int usuarioId)
+        {
+            var obra = await _context.ObrasSociales.FirstOrDefaultAsync(x => x.Id == id && x.UsuarioId == usuarioId);
+            if (obra == null) return false;
+
+            obra.Nombre = dto.Nombre;
+            await _context.SaveChangesAsync();
+            return true;
+        }
+
+
         public async Task<ObraSocialDTO> CrearAsync(CrearObraSocialDTO dto, int usuarioId)
         {
             var obra = new ObraSocial { Nombre = dto.Nombre, UsuarioId = usuarioId };
