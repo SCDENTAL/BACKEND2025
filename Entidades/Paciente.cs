@@ -8,13 +8,12 @@ namespace Agenda.Entidades
         public string Nombre { get; set; }
         public string Apellido { get; set; }
         public int Dni { get; set; }
-        public int Telefono { get; set; }
+        public string Telefono { get; set; }
         public string Email { get; set; }
 
         public int? ObraSocialId { get; set; }
         public ObraSocial? ObraSocial { get; set; } 
-
-        // Relación con el usuario que lo administra
+        
         public int UsuarioId { get; set; }
         public Usuario Usuario { get; set; }
 

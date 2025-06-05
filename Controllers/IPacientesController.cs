@@ -33,15 +33,23 @@ namespace Agenda.Controllers
             return paciente is null ? NotFound() : Ok(paciente);
         }
 
-        [HttpPost]
-        public async Task<IActionResult> Post([FromBody] CrearPacienteDTO dto)
-        {
-            int usuarioId = GetUsuarioId();
-            var creado = await _service.CrearAsync(dto, usuarioId);
-            return CreatedAtAction(nameof(GetById), new { id = creado.Id }, creado);
-        }
+		[HttpPost]
+		public async Task<IActionResult> Post([FromBody] CrearPacienteDTO dto)
+		{
+			try
+			{
+				int usuarioId = GetUsuarioId();
+				var creado = await _service.CrearAsync(dto, usuarioId);
+				return CreatedAtAction(nameof(GetById), new { id = creado.Id }, creado);
+			}
+			catch (Exception ex)
+			{
+				return StatusCode(500, new { mensaje = "Error interno", detalle = ex.Message });
+			}
+		}
 
-        [HttpPut("{id}")]
+
+		[HttpPut("{id}")]
         public async Task<IActionResult> Put(int id, [FromBody] EditarPacientesDTO dto)
         {
             int usuarioId = GetUsuarioId();

@@ -27,7 +27,7 @@ builder.Services.AddSwaggerGen(c =>
         Scheme = "Bearer",
         BearerFormat = "JWT",
         In = Microsoft.OpenApi.Models.ParameterLocation.Header,
-        Description = "Pegá tu JWT sin escribir 'Bearer '. Swagger lo agrega automáticamente."
+        Description = "Pegï¿½ tu JWT sin escribir 'Bearer '. Swagger lo agrega automï¿½ticamente."
     });
 
     c.AddSecurityRequirement(new Microsoft.OpenApi.Models.OpenApiSecurityRequirement
@@ -71,7 +71,7 @@ builder.Services.AddCors(options =>
         policy.WithOrigins("http://localhost:4200")
               .AllowAnyHeader()
               .AllowAnyMethod()
-              .AllowCredentials(); // Si usás cookies o auth headers
+              .AllowCredentials(); // Si usï¿½s cookies o auth headers
     });
 });
 
@@ -114,6 +114,7 @@ app.Use(async (context, next) =>
 app.UseCors("AllowAll");
 app.UseHttpsRedirection();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();

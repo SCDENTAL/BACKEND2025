@@ -48,8 +48,7 @@ namespace Agenda.Servicios
         }
 
         public async Task<(bool Success, string Message, AuthResponse Data)> Login(LoginDto dto)
-        {
-            // Buscar en usuarios (administradores)
+        {         
             var usuario = await _context.Usuarios.Include(u => u.Rol).FirstOrDefaultAsync(u => u.Email == dto.Email);
 
             if (usuario == null || !BCrypt.Net.BCrypt.Verify(dto.Password, usuario.Password))

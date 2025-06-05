@@ -1,12 +1,15 @@
-﻿using Agenda.Entidades.DTOs.DTO.TurnosDTO;
+﻿using Agenda.Entidades;
+using Agenda.Entidades.DTOs.DTO.TurnosDTO;
+using System.Security.Claims;
 
 namespace Agenda.Interfaces
 {
     public interface ITurnoService
-    {
-        Task<Turno> CrearTurnoAsync(CrearTurnosDTO turnoDto);
-        Task<IEnumerable<Turno>> ObtenerTurnosAsync(int usuarioId);
-        Task<Turno> ObtenerTurnoPorIdAsync(int id);
-        Task<bool> EliminarTurnoAsync(int id);
-    }
+    {		
+		Task<List<TurnoDTO>> ObtenerTurnos(ClaimsPrincipal user);
+		Task<string> CrearTurno(CrearTurnosDTO dto, ClaimsPrincipal user);
+		Task<string> ActualizarTurno(int id, CrearTurnosDTO dto, ClaimsPrincipal user);
+		Task<string> EliminarTurno(int id, ClaimsPrincipal user);
+		Task<string> CambiarEstado(int id, EstadoTurno nuevoEstado, ClaimsPrincipal user);
+	}
 }

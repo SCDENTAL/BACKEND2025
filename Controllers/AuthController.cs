@@ -37,5 +37,11 @@ namespace Agenda.Controllers
 
             return Ok(result.Data);
         }
-    }
+
+		[HttpGet("ping")]
+		public IActionResult Ping()
+		{
+			return Ok("pong");
+		}
+	}
 }

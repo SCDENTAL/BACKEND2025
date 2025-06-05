@@ -6,107 +6,106 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Agenda.Servicios
 {
-   
-        public class PacienteService : IPacienteService
-        {
-        private readonly AppDbContext _context;
 
-        public PacienteService(AppDbContext context) => _context = context;
+	public class PacienteService : IPacienteService
+	{
+		private readonly AppDbContext _context;
 
-        public async Task<List<PacienteDTO>> ObtenerTodosAsync(int usuarioId) =>
-            await _context.Pacientes
-                .Include(p => p.ObraSocial)
-                .Where(p => p.UsuarioId == usuarioId)
-                .Select(p => new PacienteDTO
-                {
-                    Id = p.Id,
-                    Nombre = p.Nombre,
-                    Apellido = p.Apellido,
-                    Dni = p.Dni,
-                    Telefono = p.Telefono,
-                    Email = p.Email,
-                    ObraSocial = p.ObraSocial != null ? p.ObraSocial.Nombre : "Sin obra social"
-                }).ToListAsync();
+		public PacienteService(AppDbContext context) => _context = context;
 
-        public async Task<PacienteDTO?> ObtenerPorIdAsync(int id, int usuarioId)
-        {
-            var paciente = await _context.Pacientes
-                .Include(p => p.ObraSocial)
-                .FirstOrDefaultAsync(p => p.Id == id && p.UsuarioId == usuarioId);
+		public async Task<List<PacienteDTO>> ObtenerTodosAsync(int usuarioId) =>
+			await _context.Pacientes
+				.Include(p => p.ObraSocial)
+				.Where(p => p.UsuarioId == usuarioId)
+				.Select(p => new PacienteDTO
+				{
+					Id = p.Id,
+					Nombre = p.Nombre,
+					Apellido = p.Apellido,
+					Dni = p.Dni,
+					Telefono = p.Telefono,
+					Email = p.Email,
+					ObraSocial = p.ObraSocial != null ? p.ObraSocial.Nombre : "Sin obra social"
+				}).ToListAsync();
 
-            if (paciente == null) return null;
+		public async Task<PacienteDTO?> ObtenerPorIdAsync(int id, int usuarioId)
+		{
+			var paciente = await _context.Pacientes
+				.Include(p => p.ObraSocial)
+				.FirstOrDefaultAsync(p => p.Id == id && p.UsuarioId == usuarioId);
 
-            return new PacienteDTO
-            {
-                Id = paciente.Id,
-                Nombre = paciente.Nombre,
-                Dni = paciente.Dni,
-                Telefono = paciente.Telefono,
-                Email = paciente.Email,
-                ObraSocial = paciente.ObraSocial != null ? paciente.ObraSocial.Nombre : "Sin obra social"
-            };
-        }
+			if (paciente == null) return null;
 
-        public async Task<PacienteDTO> CrearAsync(CrearPacienteDTO dto, int usuarioId)
-        {
-            var paciente = new Paciente
-            {
-                Nombre = dto.Nombre,
-                Apellido = dto.Apellido,
-                Dni = dto.Dni,
-                Telefono = dto.Telefono,
-                Email = dto.Email,
-                ObraSocialId = dto.ObraSocialId,
-                UsuarioId = usuarioId
-            };
+			return new PacienteDTO
+			{
+				Id = paciente.Id,
+				Nombre = paciente.Nombre,
+				Dni = paciente.Dni,
+				Telefono = paciente.Telefono,
+				Email = paciente.Email,
+				ObraSocial = paciente.ObraSocial != null ? paciente.ObraSocial.Nombre : "Sin obra social"
+			};
+		}
 
-            _context.Pacientes.Add(paciente);
-            await _context.SaveChangesAsync();
+		public async Task<PacienteDTO> CrearAsync(CrearPacienteDTO dto, int usuarioId)
+		{
+			var paciente = new Paciente
+			{
+				Nombre = dto.Nombre,
+				Apellido = dto.Apellido,
+				Dni = dto.Dni,
+				Telefono = dto.Telefono,
+				Email = dto.Email,
+				ObraSocialId = dto.ObraSocialId,
+				UsuarioId = usuarioId
+			};
 
-            return new PacienteDTO
-            {
-                Id = paciente.Id,
-                Nombre = paciente.Nombre,
-                Apellido = paciente.Apellido,
-                Dni = dto.Dni,
-                Telefono = dto.Telefono,
-                Email = dto.Email,
-                ObraSocial = (await _context.ObrasSociales.FindAsync(dto.ObraSocialId))?.Nombre ?? "Sin obra social"
-            };
-        }
+			_context.Pacientes.Add(paciente);
+			await _context.SaveChangesAsync();
 
-        public async Task<bool> EditarAsync(int id, EditarPacientesDTO dto, int usuarioId)
-        {
-            var paciente = await _context.Pacientes
-                .FirstOrDefaultAsync(p => p.Id == id && p.UsuarioId == usuarioId);
+			return new PacienteDTO
+			{
+				Id = paciente.Id,
+				Nombre = paciente.Nombre,
+				Apellido = paciente.Apellido,
+				Dni = dto.Dni,
+				Telefono = dto.Telefono,
+				Email = dto.Email,
+				ObraSocial = (await _context.ObrasSociales.FindAsync(dto.ObraSocialId))?.Nombre ?? "Sin obra social"
+			};
+		}
 
-            if (paciente == null) return false;
+		public async Task<bool> EditarAsync(int id, EditarPacientesDTO dto, int usuarioId)
+		{
+			var paciente = await _context.Pacientes
+				.FirstOrDefaultAsync(p => p.Id == id && p.UsuarioId == usuarioId);
 
-            paciente.Nombre = dto.Nombre;
-            paciente.Apellido = dto.Apellido;
-            paciente.Dni = dto.Dni;
-            paciente.Telefono = dto.Telefono;
-            paciente.Email = dto.Email;
+			if (paciente == null) return false;
 
-            var obra = await _context.ObrasSociales.FirstOrDefaultAsync(x => x.Nombre == dto.ObraSocial && x.UsuarioId == usuarioId);
-            if (obra != null)
-                paciente.ObraSocialId = obra.Id;
+			paciente.Nombre = dto.Nombre;
+			paciente.Apellido = dto.Apellido;
+			paciente.Dni = dto.Dni;
+			paciente.Telefono = dto.Telefono;
+			paciente.Email = dto.Email;
 
-            await _context.SaveChangesAsync();
-            return true;
-        }
+			var obra = await _context.ObrasSociales.FirstOrDefaultAsync(x => x.Nombre == dto.ObraSocial && x.UsuarioId == usuarioId);
+			if (obra != null)
+				paciente.ObraSocialId = obra.Id;
 
-        public async Task<bool> EliminarAsync(int id, int usuarioId)
-        {
-            var paciente = await _context.Pacientes.FirstOrDefaultAsync(p => p.Id == id && p.UsuarioId == usuarioId);
-            if (paciente == null) return false;
+			await _context.SaveChangesAsync();
+			return true;
+		}
 
-            _context.Pacientes.Remove(paciente);
-            await _context.SaveChangesAsync();
-            return true;
-        }
+		public async Task<bool> EliminarAsync(int id, int usuarioId)
+		{
+			var paciente = await _context.Pacientes.FirstOrDefaultAsync(p => p.Id == id && p.UsuarioId == usuarioId);
+			if (paciente == null) return false;
 
-    }
+			_context.Pacientes.Remove(paciente);
+			await _context.SaveChangesAsync();
+			return true;
+		}
 
-    }
+	}
 
+}
