@@ -1,12 +1,24 @@
-﻿namespace Agenda.Entidades.DTOs.DTO.TurnosDTO
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Agenda.Entidades.DTOs.DTO.TurnosDTO
 {
     public class EditarTurnosDTO
     {
-        public string NombrePaciente { get; set; }
-        public string DniPaciente { get; set; }
-        public string ObraSocial { get; set; }
-        public DateTime FechaHora { get; set; }
-        public int OdontologoId { get; set; }
-        public int UsuarioId { get; set; } // para asociarlo al dueño del sistema
+        [Required]
+        public int Id { get; set; }
+
+        public DateTime Fecha { get; set; }
+
+        public TimeSpan Horario { get; set; }
+
+        public bool Disponible { get; set; }
+
+        public bool? Asistio { get; set; }
+        [Required]
+        public int IdPaciente { get; set; }
+
+        public int? OdontologoId { get; set; }
+
+        public int? IdObraSocial { get; set; }
     }
 }

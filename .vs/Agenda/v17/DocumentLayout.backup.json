@@ -1,214 +1,138 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\rober\\source\\repos\\Agenda\\",
+  "WorkspaceRootPath": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\rober\\source\\repos\\agenda\\servicios\\pacienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:servicios\\pacienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\rober\\source\\repos\\agenda\\entidades\\dtos\\dto\\pacientesdto\\verpacientesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:entidades\\dtos\\dto\\pacientesdto\\verpacientesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\rober\\source\\repos\\agenda\\entidades\\dtos\\dto\\pacientesdto\\editarpacientesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:entidades\\dtos\\dto\\pacientesdto\\editarpacientesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\rober\\source\\repos\\agenda\\entidades\\dtos\\dto\\pacientesdto\\pacientedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:entidades\\dtos\\dto\\pacientesdto\\pacientedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\rober\\source\\repos\\agenda\\entidades\\dtos\\dto\\pacientesdto\\crearpacientedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:entidades\\dtos\\dto\\pacientesdto\\crearpacientedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\rober\\source\\repos\\agenda\\entidades\\paciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:entidades\\paciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\rober\\source\\repos\\agenda\\entidades\\dtos\\dto\\obrassocialesdto\\crearobrasocialdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:entidades\\dtos\\dto\\obrassocialesdto\\crearobrasocialdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\rober\\source\\repos\\agenda\\servicios\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:servicios\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\rober\\source\\repos\\agenda\\controllers\\ipacientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:controllers\\ipacientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\rober\\source\\repos\\agenda\\entidades\\rol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:entidades\\rol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\rober\\source\\repos\\agenda\\servicios\\obrasocialservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:servicios\\obrasocialservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\rober\\source\\repos\\agenda\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\rober\\source\\repos\\agenda\\entidades\\dtos\\dto\\odontologosdto\\editarodontologodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:entidades\\dtos\\dto\\odontologosdto\\editarodontologodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\rober\\source\\repos\\agenda\\entidades\\dtos\\dto\\odontologosdto\\crearodontologodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:entidades\\dtos\\dto\\odontologosdto\\crearodontologodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\rober\\source\\repos\\agenda\\entidades\\dtos\\obrasocial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:entidades\\dtos\\obrasocial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\rober\\source\\repos\\agenda\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\rober\\source\\repos\\agenda\\interfaces\\ipacienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:interfaces\\ipacienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\rober\\source\\repos\\agenda\\servicios\\turnoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\servicios\\turnoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:servicios\\turnoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\rober\\source\\repos\\agenda\\entidades\\dtos\\dto\\turnosdto\\crearturnosdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\entidades\\dtos\\dto\\turnosdto\\crearturnosdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:entidades\\dtos\\dto\\turnosdto\\crearturnosdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\rober\\source\\repos\\agenda\\servicios\\odontologoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:servicios\\odontologoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\rober\\source\\repos\\agenda\\controllers\\obrassocialescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:controllers\\obrassocialescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\rober\\source\\repos\\agenda\\entidades\\dtos\\dto\\odontologosdto\\verodontologodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:entidades\\dtos\\dto\\odontologosdto\\verodontologodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\rober\\source\\repos\\agenda\\interfaces\\iobrassocialesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:interfaces\\iobrassocialesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\rober\\source\\repos\\agenda\\entidades\\dtos\\dto\\obrassocialesdto\\editarobrasocialdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:entidades\\dtos\\dto\\obrassocialesdto\\editarobrasocialdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\rober\\source\\repos\\agenda\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\rober\\source\\repos\\agenda\\controllers\\odontologocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:controllers\\odontologocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\rober\\source\\repos\\agenda\\interfaces\\iodontologoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:interfaces\\iodontologoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\rober\\source\\repos\\agenda\\entidades\\odontologo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:entidades\\odontologo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\rober\\source\\repos\\agenda\\entidades\\dtos\\dto\\obrassocialesdto\\obrasocialdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:entidades\\dtos\\dto\\obrassocialesdto\\obrasocialdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\rober\\source\\repos\\agenda\\entidades\\dtos\\dto\\obrassocialesdto\\verobrasocialdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:entidades\\dtos\\dto\\obrassocialesdto\\verobrasocialdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\rober\\source\\repos\\agenda\\servicios\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:servicios\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\rober\\source\\repos\\agenda\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\rober\\source\\repos\\agenda\\controllers\\turnocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\controllers\\turnocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:controllers\\turnocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\rober\\source\\repos\\agenda\\entidades\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:entidades\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\rober\\source\\repos\\Agenda\\Migrations\\20250423211853_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20250423211853_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\rober\\source\\repos\\agenda\\base\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:base\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\rober\\source\\repos\\agenda\\servicios\\hasherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:servicios\\hasherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\rober\\source\\repos\\agenda\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\rober\\source\\repos\\Agenda\\Migrations\\20250423181824_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20250423181824_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\rober\\source\\repos\\agenda\\interfaces\\ipasswordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:interfaces\\ipasswordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\rober\\source\\repos\\agenda\\entidades\\dtos\\dto\\odontologosdto\\odontologosdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:entidades\\dtos\\dto\\odontologosdto\\odontologosdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\rober\\source\\repos\\agenda\\entidades\\dtos\\registrodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:entidades\\dtos\\registrodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\rober\\source\\repos\\agenda\\entidades\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:entidades\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\rober\\source\\repos\\agenda\\entidades\\dtos\\authresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:entidades\\dtos\\authresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\rober\\source\\repos\\Agenda\\Migrations\\20250423174233_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20250423174233_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\rober\\source\\repos\\agenda\\entidades\\turno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:entidades\\turno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\rober\\source\\repos\\agenda\\entidades\\dtos\\dto\\turnosdto\\editarturnosdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:entidades\\dtos\\dto\\turnosdto\\editarturnosdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\rober\\source\\repos\\agenda\\interfaces\\iturnoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\interfaces\\iturnoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:interfaces\\iturnoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\rober\\source\\repos\\Agenda\\Migrations\\20250422013831_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20250422013831_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\entidades\\dtos\\dto\\turnosdto\\marcarasistenciadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:entidades\\dtos\\dto\\turnosdto\\marcarasistenciadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\rober\\source\\repos\\Agenda\\Migrations\\20250422013525_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20250422013525_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\entidades\\dtos\\dto\\turnosdto\\editarturnosdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:entidades\\dtos\\dto\\turnosdto\\editarturnosdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\rober\\source\\repos\\agenda\\migrations\\20250424000329_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:migrations\\20250424000329_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\entidades\\dtos\\dto\\turnosdto\\reservarturnodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:entidades\\dtos\\dto\\turnosdto\\reservarturnodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\rober\\source\\repos\\agenda\\migrations\\20250424041847_fixdni.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:migrations\\20250424041847_fixdni.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\entidades\\dtos\\dto\\turnosdto\\turnodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:entidades\\dtos\\dto\\turnosdto\\turnodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\entidades\\dtos\\dto\\turnosdto\\turnonotificaciondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:entidades\\dtos\\dto\\turnosdto\\turnonotificaciondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\entidades\\dtos\\dto\\turnosdto\\resturnosfiltrados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:entidades\\dtos\\dto\\turnosdto\\resturnosfiltrados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\entidades\\turno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:entidades\\turno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\entidades\\dtos\\dto\\turnosdto\\turnodetalledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:entidades\\dtos\\dto\\turnosdto\\turnodetalledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Migrations\\20250609073833_FixTurnosOSDuplicada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20250609073833_FixTurnosOSDuplicada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\base\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:base\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\entidades\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:entidades\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\controllers\\odontologocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:controllers\\odontologocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\servicios\\obrasocialservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:servicios\\obrasocialservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\servicios\\calendarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:servicios\\calendarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\servicios\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:servicios\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\entidades\\calendario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:entidades\\calendario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\entidades\\dtos\\dto\\calendariodto\\crearcalendariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:entidades\\dtos\\dto\\calendariodto\\crearcalendariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\interfaces\\icalendarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:interfaces\\icalendarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\controllers\\calendariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:controllers\\calendariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\controllers\\obrassocialescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:controllers\\obrassocialescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\controllers\\ipacientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:controllers\\ipacientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\exceptions\\notfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:exceptions\\notfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\exceptions\\badrequestexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:exceptions\\badrequestexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\exceptions\\mensajepersonlaizadoexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:exceptions\\mensajepersonlaizadoexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\migrations\\20250424041847_fixdni.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:migrations\\20250424041847_fixdni.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\entidades\\dtos\\dto\\calendariodto\\calendariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:entidades\\dtos\\dto\\calendariodto\\calendariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\migrations\\20250607043657_nulleableelturno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:migrations\\20250607043657_nulleableelturno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -222,644 +146,419 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "CrearObraSocialDTO.cs",
-              "DocumentMoniker": "C:\\Users\\rober\\source\\repos\\Agenda\\Entidades\\DTOs\\DTO\\ObrasSocialesDTO\\CrearObraSocialDTO.cs",
-              "RelativeDocumentMoniker": "Entidades\\DTOs\\DTO\\ObrasSocialesDTO\\CrearObraSocialDTO.cs",
-              "ToolTip": "C:\\Users\\rober\\source\\repos\\Agenda\\Entidades\\DTOs\\DTO\\ObrasSocialesDTO\\CrearObraSocialDTO.cs",
-              "RelativeToolTip": "Entidades\\DTOs\\DTO\\ObrasSocialesDTO\\CrearObraSocialDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T23:21:43.402Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CrearPacienteDTO.cs",
-              "DocumentMoniker": "C:\\Users\\rober\\source\\repos\\Agenda\\Entidades\\DTOs\\DTO\\PacientesDTO\\CrearPacienteDTO.cs",
-              "RelativeDocumentMoniker": "Entidades\\DTOs\\DTO\\PacientesDTO\\CrearPacienteDTO.cs",
-              "ToolTip": "C:\\Users\\rober\\source\\repos\\Agenda\\Entidades\\DTOs\\DTO\\PacientesDTO\\CrearPacienteDTO.cs",
-              "RelativeToolTip": "Entidades\\DTOs\\DTO\\PacientesDTO\\CrearPacienteDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T02:19:07.682Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "EditarOdontologoDTO.cs",
-              "DocumentMoniker": "C:\\Users\\rober\\source\\repos\\Agenda\\Entidades\\DTOs\\DTO\\OdontologosDTO\\EditarOdontologoDTO.cs",
-              "RelativeDocumentMoniker": "Entidades\\DTOs\\DTO\\OdontologosDTO\\EditarOdontologoDTO.cs",
-              "ToolTip": "C:\\Users\\rober\\source\\repos\\Agenda\\Entidades\\DTOs\\DTO\\OdontologosDTO\\EditarOdontologoDTO.cs",
-              "RelativeToolTip": "Entidades\\DTOs\\DTO\\OdontologosDTO\\EditarOdontologoDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T17:37:44.982Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PacienteDTO.cs",
-              "DocumentMoniker": "C:\\Users\\rober\\source\\repos\\Agenda\\Entidades\\DTOs\\DTO\\PacientesDTO\\PacienteDTO.cs",
-              "RelativeDocumentMoniker": "Entidades\\DTOs\\DTO\\PacientesDTO\\PacienteDTO.cs",
-              "ToolTip": "C:\\Users\\rober\\source\\repos\\Agenda\\Entidades\\DTOs\\DTO\\PacientesDTO\\PacienteDTO.cs",
-              "RelativeToolTip": "Entidades\\DTOs\\DTO\\PacientesDTO\\PacienteDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAcAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T23:23:07.464Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "EditarPacientesDTO.cs",
-              "DocumentMoniker": "C:\\Users\\rober\\source\\repos\\Agenda\\Entidades\\DTOs\\DTO\\PacientesDTO\\EditarPacientesDTO.cs",
-              "RelativeDocumentMoniker": "Entidades\\DTOs\\DTO\\PacientesDTO\\EditarPacientesDTO.cs",
-              "ToolTip": "C:\\Users\\rober\\source\\repos\\Agenda\\Entidades\\DTOs\\DTO\\PacientesDTO\\EditarPacientesDTO.cs",
-              "RelativeToolTip": "Entidades\\DTOs\\DTO\\PacientesDTO\\EditarPacientesDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAUAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-24T03:55:04.004Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PacienteService.cs",
-              "DocumentMoniker": "C:\\Users\\rober\\source\\repos\\Agenda\\Servicios\\PacienteService.cs",
-              "RelativeDocumentMoniker": "Servicios\\PacienteService.cs",
-              "ToolTip": "C:\\Users\\rober\\source\\repos\\Agenda\\Servicios\\PacienteService.cs",
-              "RelativeToolTip": "Servicios\\PacienteService.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAAADIAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T02:17:11.572Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "TokenService.cs",
-              "DocumentMoniker": "C:\\Users\\rober\\source\\repos\\Agenda\\Servicios\\TokenService.cs",
-              "RelativeDocumentMoniker": "Servicios\\TokenService.cs",
-              "ToolTip": "C:\\Users\\rober\\source\\repos\\Agenda\\Servicios\\TokenService.cs",
-              "RelativeToolTip": "Servicios\\TokenService.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAUwCcAAAAwAAAAAAAAAA==",
+              "Title": "TurnoDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Entidades\\DTOs\\DTO\\TurnosDTO\\TurnoDTO.cs",
+              "RelativeDocumentMoniker": "Entidades\\DTOs\\DTO\\TurnosDTO\\TurnoDTO.cs",
+              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Entidades\\DTOs\\DTO\\TurnosDTO\\TurnoDTO.cs",
+              "RelativeToolTip": "Entidades\\DTOs\\DTO\\TurnosDTO\\TurnoDTO.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAUwBAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T01:55:07.624Z",
+              "WhenOpened": "2025-06-09T05:52:26.017Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "VerPacientesDTO.cs",
-              "DocumentMoniker": "C:\\Users\\rober\\source\\repos\\Agenda\\Entidades\\DTOs\\DTO\\PacientesDTO\\VerPacientesDTO.cs",
-              "RelativeDocumentMoniker": "Entidades\\DTOs\\DTO\\PacientesDTO\\VerPacientesDTO.cs",
-              "ToolTip": "C:\\Users\\rober\\source\\repos\\Agenda\\Entidades\\DTOs\\DTO\\PacientesDTO\\VerPacientesDTO.cs",
-              "RelativeToolTip": "Entidades\\DTOs\\DTO\\PacientesDTO\\VerPacientesDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAApAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "ReservarTurnoDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Entidades\\DTOs\\DTO\\TurnosDTO\\ReservarTurnoDTO.cs",
+              "RelativeDocumentMoniker": "Entidades\\DTOs\\DTO\\TurnosDTO\\ReservarTurnoDTO.cs",
+              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Entidades\\DTOs\\DTO\\TurnosDTO\\ReservarTurnoDTO.cs",
+              "RelativeToolTip": "Entidades\\DTOs\\DTO\\TurnosDTO\\ReservarTurnoDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-24T03:55:18.893Z",
+              "WhenOpened": "2025-06-09T05:52:38.061Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Paciente.cs",
-              "DocumentMoniker": "C:\\Users\\rober\\source\\repos\\Agenda\\Entidades\\Paciente.cs",
-              "RelativeDocumentMoniker": "Entidades\\Paciente.cs",
-              "ToolTip": "C:\\Users\\rober\\source\\repos\\Agenda\\Entidades\\Paciente.cs",
-              "RelativeToolTip": "Entidades\\Paciente.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAIwBEAAAAqAAAAAAAAAA==",
+              "Title": "EditarTurnosDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Entidades\\DTOs\\DTO\\TurnosDTO\\EditarTurnosDTO.cs",
+              "RelativeDocumentMoniker": "Entidades\\DTOs\\DTO\\TurnosDTO\\EditarTurnosDTO.cs",
+              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Entidades\\DTOs\\DTO\\TurnosDTO\\EditarTurnosDTO.cs",
+              "RelativeToolTip": "Entidades\\DTOs\\DTO\\TurnosDTO\\EditarTurnosDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T02:14:57.971Z",
+              "WhenOpened": "2025-06-09T05:52:24.541Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Rol.cs",
-              "DocumentMoniker": "C:\\Users\\rober\\source\\repos\\Agenda\\Entidades\\Rol.cs",
-              "RelativeDocumentMoniker": "Entidades\\Rol.cs",
-              "ToolTip": "C:\\Users\\rober\\source\\repos\\Agenda\\Entidades\\Rol.cs",
-              "RelativeToolTip": "Entidades\\Rol.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "TurnoController.cs",
+              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Controllers\\TurnoController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TurnoController.cs",
+              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Controllers\\TurnoController.cs",
+              "RelativeToolTip": "Controllers\\TurnoController.cs",
+              "ViewState": "AgIAAFwAAAAAAAAAAAA8wHQAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T21:16:14.217Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "ObraSocial.cs",
-              "DocumentMoniker": "C:\\Users\\rober\\source\\repos\\Agenda\\Entidades\\DTOs\\ObraSocial.cs",
-              "RelativeDocumentMoniker": "Entidades\\DTOs\\ObraSocial.cs",
-              "ToolTip": "C:\\Users\\rober\\source\\repos\\Agenda\\Entidades\\DTOs\\ObraSocial.cs",
-              "RelativeToolTip": "Entidades\\DTOs\\ObraSocial.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T01:37:02.304Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ObraSocialService.cs",
-              "DocumentMoniker": "C:\\Users\\rober\\source\\repos\\Agenda\\Servicios\\ObraSocialService.cs",
-              "RelativeDocumentMoniker": "Servicios\\ObraSocialService.cs",
-              "ToolTip": "C:\\Users\\rober\\source\\repos\\Agenda\\Servicios\\ObraSocialService.cs",
-              "RelativeToolTip": "Servicios\\ObraSocialService.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAvwCsAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T23:24:26.33Z",
+              "WhenOpened": "2025-06-07T06:57:13.924Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "IPacientesController.cs",
-              "DocumentMoniker": "C:\\Users\\rober\\source\\repos\\Agenda\\Controllers\\IPacientesController.cs",
-              "RelativeDocumentMoniker": "Controllers\\IPacientesController.cs",
-              "ToolTip": "C:\\Users\\rober\\source\\repos\\Agenda\\Controllers\\IPacientesController.cs",
-              "RelativeToolTip": "Controllers\\IPacientesController.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAiwDMAAAAcAAAAAAAAAA==",
+              "Title": "TurnoNotificacionDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Entidades\\DTOs\\DTO\\TurnosDTO\\TurnoNotificacionDTO.cs",
+              "RelativeDocumentMoniker": "Entidades\\DTOs\\DTO\\TurnosDTO\\TurnoNotificacionDTO.cs",
+              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Entidades\\DTOs\\DTO\\TurnosDTO\\TurnoNotificacionDTO.cs",
+              "RelativeToolTip": "Entidades\\DTOs\\DTO\\TurnosDTO\\TurnoNotificacionDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-24T04:04:12.097Z",
+              "WhenOpened": "2025-06-09T05:52:26.552Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TurnoService.cs",
+              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Servicios\\TurnoService.cs",
+              "RelativeDocumentMoniker": "Servicios\\TurnoService.cs",
+              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Servicios\\TurnoService.cs",
+              "RelativeToolTip": "Servicios\\TurnoService.cs",
+              "ViewState": "AgIAAHgAAAAAAAAAAAAuwJAAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T04:11:07.052Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ITurnoService.cs",
+              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Interfaces\\ITurnoService.cs",
+              "RelativeDocumentMoniker": "Interfaces\\ITurnoService.cs",
+              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Interfaces\\ITurnoService.cs",
+              "RelativeToolTip": "Interfaces\\ITurnoService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T05:11:42.85Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CrearTurnosDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Entidades\\DTOs\\DTO\\TurnosDTO\\CrearTurnosDTO.cs",
+              "RelativeDocumentMoniker": "Entidades\\DTOs\\DTO\\TurnosDTO\\CrearTurnosDTO.cs",
+              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Entidades\\DTOs\\DTO\\TurnosDTO\\CrearTurnosDTO.cs",
+              "RelativeToolTip": "Entidades\\DTOs\\DTO\\TurnosDTO\\CrearTurnosDTO.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwBkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T05:52:23.992Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MarcarAsistenciaDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Entidades\\DTOs\\DTO\\TurnosDTO\\MarcarAsistenciaDTO.cs",
+              "RelativeDocumentMoniker": "Entidades\\DTOs\\DTO\\TurnosDTO\\MarcarAsistenciaDTO.cs",
+              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Entidades\\DTOs\\DTO\\TurnosDTO\\MarcarAsistenciaDTO.cs",
+              "RelativeToolTip": "Entidades\\DTOs\\DTO\\TurnosDTO\\MarcarAsistenciaDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T09:00:37.688Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ResTurnosFiltrados.cs",
+              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Entidades\\DTOs\\DTO\\TurnosDTO\\ResTurnosFiltrados.cs",
+              "RelativeDocumentMoniker": "Entidades\\DTOs\\DTO\\TurnosDTO\\ResTurnosFiltrados.cs",
+              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Entidades\\DTOs\\DTO\\TurnosDTO\\ResTurnosFiltrados.cs",
+              "RelativeToolTip": "Entidades\\DTOs\\DTO\\TurnosDTO\\ResTurnosFiltrados.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T05:53:58.537Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\rober\\source\\repos\\Agenda\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\rober\\source\\repos\\Agenda\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAFEAAAAAAAAAAAAqwGYAAAARAAAAAAAAAA==",
+              "Title": "TurnoDetalleDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Entidades\\DTOs\\DTO\\TurnosDTO\\TurnoDetalleDTO.cs",
+              "RelativeDocumentMoniker": "Entidades\\DTOs\\DTO\\TurnosDTO\\TurnoDetalleDTO.cs",
+              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Entidades\\DTOs\\DTO\\TurnosDTO\\TurnoDetalleDTO.cs",
+              "RelativeToolTip": "Entidades\\DTOs\\DTO\\TurnosDTO\\TurnoDetalleDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T01:55:38.071Z",
+              "WhenOpened": "2025-06-09T05:52:25.454Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Turno.cs",
+              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Entidades\\Turno.cs",
+              "RelativeDocumentMoniker": "Entidades\\Turno.cs",
+              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Entidades\\Turno.cs",
+              "RelativeToolTip": "Entidades\\Turno.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAA7wC0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T04:10:01.188Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "20250609073833_FixTurnosOSDuplicada.cs",
+              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Migrations\\20250609073833_FixTurnosOSDuplicada.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250609073833_FixTurnosOSDuplicada.cs",
+              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Migrations\\20250609073833_FixTurnosOSDuplicada.cs",
+              "RelativeToolTip": "Migrations\\20250609073833_FixTurnosOSDuplicada.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T07:38:34.118Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
-              "Title": "CrearOdontologoDTO.cs",
-              "DocumentMoniker": "C:\\Users\\rober\\source\\repos\\Agenda\\Entidades\\DTOs\\DTO\\OdontologosDTO\\CrearOdontologoDTO.cs",
-              "RelativeDocumentMoniker": "Entidades\\DTOs\\DTO\\OdontologosDTO\\CrearOdontologoDTO.cs",
-              "ToolTip": "C:\\Users\\rober\\source\\repos\\Agenda\\Entidades\\DTOs\\DTO\\OdontologosDTO\\CrearOdontologoDTO.cs",
-              "RelativeToolTip": "Entidades\\DTOs\\DTO\\OdontologosDTO\\CrearOdontologoDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Base\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Base\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Base\\AppDbContext.cs",
+              "RelativeToolTip": "Base\\AppDbContext.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAAwFgAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T17:32:49.423Z",
+              "WhenOpened": "2025-06-07T04:33:57.639Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Entidades\\Usuario.cs",
+              "RelativeDocumentMoniker": "Entidades\\Usuario.cs",
+              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Entidades\\Usuario.cs",
+              "RelativeToolTip": "Entidades\\Usuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T07:33:26.667Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAAE4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T03:56:57.543Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "OdontologoController.cs",
+              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Controllers\\OdontologoController.cs",
+              "RelativeDocumentMoniker": "Controllers\\OdontologoController.cs",
+              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Controllers\\OdontologoController.cs",
+              "RelativeToolTip": "Controllers\\OdontologoController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAABtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T06:57:32.643Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "CalendarioService.cs",
+              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Servicios\\CalendarioService.cs",
+              "RelativeDocumentMoniker": "Servicios\\CalendarioService.cs",
+              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Servicios\\CalendarioService.cs",
+              "RelativeToolTip": "Servicios\\CalendarioService.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAgwCoAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T03:42:18.359Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 17,
-              "Title": "TurnoService.cs",
-              "DocumentMoniker": "C:\\Users\\rober\\source\\repos\\Agenda\\Servicios\\TurnoService.cs",
-              "RelativeDocumentMoniker": "Servicios\\TurnoService.cs",
-              "ToolTip": "C:\\Users\\rober\\source\\repos\\Agenda\\Servicios\\TurnoService.cs",
-              "RelativeToolTip": "Servicios\\TurnoService.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAIAzwBgAAAAnAAAAAAAAAA==",
+              "Title": "ObraSocialService.cs",
+              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Servicios\\ObraSocialService.cs",
+              "RelativeDocumentMoniker": "Servicios\\ObraSocialService.cs",
+              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Servicios\\ObraSocialService.cs",
+              "RelativeToolTip": "Servicios\\ObraSocialService.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAADYAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T01:55:19.012Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\rober\\source\\repos\\Agenda\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\rober\\source\\repos\\Agenda\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-23T18:22:20.52Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "IPacienteService.cs",
-              "DocumentMoniker": "C:\\Users\\rober\\source\\repos\\Agenda\\Interfaces\\IPacienteService.cs",
-              "RelativeDocumentMoniker": "Interfaces\\IPacienteService.cs",
-              "ToolTip": "C:\\Users\\rober\\source\\repos\\Agenda\\Interfaces\\IPacienteService.cs",
-              "RelativeToolTip": "Interfaces\\IPacienteService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T23:24:06.891Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "ObrasSocialesController.cs",
-              "DocumentMoniker": "C:\\Users\\rober\\source\\repos\\Agenda\\Controllers\\ObrasSocialesController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ObrasSocialesController.cs",
-              "ToolTip": "C:\\Users\\rober\\source\\repos\\Agenda\\Controllers\\ObrasSocialesController.cs",
-              "RelativeToolTip": "Controllers\\ObrasSocialesController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-24T00:39:27.394Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "CrearTurnosDTO.cs",
-              "DocumentMoniker": "C:\\Users\\rober\\source\\repos\\Agenda\\Entidades\\DTOs\\DTO\\TurnosDTO\\CrearTurnosDTO.cs",
-              "RelativeDocumentMoniker": "Entidades\\DTOs\\DTO\\TurnosDTO\\CrearTurnosDTO.cs",
-              "ToolTip": "C:\\Users\\rober\\source\\repos\\Agenda\\Entidades\\DTOs\\DTO\\TurnosDTO\\CrearTurnosDTO.cs",
-              "RelativeToolTip": "Entidades\\DTOs\\DTO\\TurnosDTO\\CrearTurnosDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T01:54:02.651Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 51,
-              "Title": "20250424041847_fixdni.cs",
-              "DocumentMoniker": "C:\\Users\\rober\\source\\repos\\Agenda\\Migrations\\20250424041847_fixdni.cs",
-              "RelativeDocumentMoniker": "Migrations\\20250424041847_fixdni.cs",
-              "ToolTip": "C:\\Users\\rober\\source\\repos\\Agenda\\Migrations\\20250424041847_fixdni.cs",
-              "RelativeToolTip": "Migrations\\20250424041847_fixdni.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-24T04:18:47.665Z"
+              "WhenOpened": "2025-06-09T06:06:59.664Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 19,
-              "Title": "OdontologoService.cs",
-              "DocumentMoniker": "C:\\Users\\rober\\source\\repos\\Agenda\\Servicios\\OdontologoService.cs",
-              "RelativeDocumentMoniker": "Servicios\\OdontologoService.cs",
-              "ToolTip": "C:\\Users\\rober\\source\\repos\\Agenda\\Servicios\\OdontologoService.cs",
-              "RelativeToolTip": "Servicios\\OdontologoService.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAUwCoAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T17:38:49.943Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "VerOdontologoDTO.cs",
-              "DocumentMoniker": "C:\\Users\\rober\\source\\repos\\Agenda\\Entidades\\DTOs\\DTO\\OdontologosDTO\\VerOdontologoDTO.cs",
-              "RelativeDocumentMoniker": "Entidades\\DTOs\\DTO\\OdontologosDTO\\VerOdontologoDTO.cs",
-              "ToolTip": "C:\\Users\\rober\\source\\repos\\Agenda\\Entidades\\DTOs\\DTO\\OdontologosDTO\\VerOdontologoDTO.cs",
-              "RelativeToolTip": "Entidades\\DTOs\\DTO\\OdontologosDTO\\VerOdontologoDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAcAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T17:37:23.242Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "IObrasSocialesService.cs",
-              "DocumentMoniker": "C:\\Users\\rober\\source\\repos\\Agenda\\Interfaces\\IObrasSocialesService.cs",
-              "RelativeDocumentMoniker": "Interfaces\\IObrasSocialesService.cs",
-              "ToolTip": "C:\\Users\\rober\\source\\repos\\Agenda\\Interfaces\\IObrasSocialesService.cs",
-              "RelativeToolTip": "Interfaces\\IObrasSocialesService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T23:23:47.818Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "EditarObraSocialDTO.cs",
-              "DocumentMoniker": "C:\\Users\\rober\\source\\repos\\Agenda\\Entidades\\DTOs\\DTO\\ObrasSocialesDTO\\EditarObraSocialDTO.cs",
-              "RelativeDocumentMoniker": "Entidades\\DTOs\\DTO\\ObrasSocialesDTO\\EditarObraSocialDTO.cs",
-              "ToolTip": "C:\\Users\\rober\\source\\repos\\Agenda\\Entidades\\DTOs\\DTO\\ObrasSocialesDTO\\EditarObraSocialDTO.cs",
-              "RelativeToolTip": "Entidades\\DTOs\\DTO\\ObrasSocialesDTO\\EditarObraSocialDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-24T03:44:59.378Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\rober\\source\\repos\\Agenda\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\rober\\source\\repos\\Agenda\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "Controllers\\AuthController.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACYAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T01:38:14.672Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "OdontologoController.cs",
-              "DocumentMoniker": "C:\\Users\\rober\\source\\repos\\Agenda\\Controllers\\OdontologoController.cs",
-              "RelativeDocumentMoniker": "Controllers\\OdontologoController.cs",
-              "ToolTip": "C:\\Users\\rober\\source\\repos\\Agenda\\Controllers\\OdontologoController.cs",
-              "RelativeToolTip": "Controllers\\OdontologoController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE0AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T17:41:29.095Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 50,
-              "Title": "20250424000329_init.cs",
-              "DocumentMoniker": "C:\\Users\\rober\\source\\repos\\Agenda\\Migrations\\20250424000329_init.cs",
-              "RelativeDocumentMoniker": "Migrations\\20250424000329_init.cs",
-              "ToolTip": "C:\\Users\\rober\\source\\repos\\Agenda\\Migrations\\20250424000329_init.cs",
-              "RelativeToolTip": "Migrations\\20250424000329_init.cs",
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Servicios\\AuthService.cs",
+              "RelativeDocumentMoniker": "Servicios\\AuthService.cs",
+              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Servicios\\AuthService.cs",
+              "RelativeToolTip": "Servicios\\AuthService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-24T00:03:30.06Z"
+              "WhenOpened": "2025-06-07T04:53:41.722Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-07T09:40:39.84Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 26,
-              "Title": "IOdontologoService.cs",
-              "DocumentMoniker": "C:\\Users\\rober\\source\\repos\\Agenda\\Interfaces\\IOdontologoService.cs",
-              "RelativeDocumentMoniker": "Interfaces\\IOdontologoService.cs",
-              "ToolTip": "C:\\Users\\rober\\source\\repos\\Agenda\\Interfaces\\IOdontologoService.cs",
-              "RelativeToolTip": "Interfaces\\IOdontologoService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Title": "IPacientesController.cs",
+              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Controllers\\IPacientesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\IPacientesController.cs",
+              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Controllers\\IPacientesController.cs",
+              "RelativeToolTip": "Controllers\\IPacientesController.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T17:38:09.133Z"
+              "WhenOpened": "2025-06-07T06:55:01.87Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "CalendarioController.cs",
+              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Controllers\\CalendarioController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CalendarioController.cs",
+              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Controllers\\CalendarioController.cs",
+              "RelativeToolTip": "Controllers\\CalendarioController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAwwCUAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T06:54:36.656Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ICalendarioService.cs",
+              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Interfaces\\ICalendarioService.cs",
+              "RelativeDocumentMoniker": "Interfaces\\ICalendarioService.cs",
+              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Interfaces\\ICalendarioService.cs",
+              "RelativeToolTip": "Interfaces\\ICalendarioService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAkAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T03:58:07.318Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 27,
-              "Title": "Odontologo.cs",
-              "DocumentMoniker": "C:\\Users\\rober\\source\\repos\\Agenda\\Entidades\\Odontologo.cs",
-              "RelativeDocumentMoniker": "Entidades\\Odontologo.cs",
-              "ToolTip": "C:\\Users\\rober\\source\\repos\\Agenda\\Entidades\\Odontologo.cs",
-              "RelativeToolTip": "Entidades\\Odontologo.cs",
+              "Title": "NotFoundException.cs",
+              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Exceptions\\NotFoundException.cs",
+              "RelativeDocumentMoniker": "Exceptions\\NotFoundException.cs",
+              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Exceptions\\NotFoundException.cs",
+              "RelativeToolTip": "Exceptions\\NotFoundException.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T02:23:04.917Z"
+              "WhenOpened": "2025-06-07T04:49:53.795Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "ObraSocialDTO.cs",
-              "DocumentMoniker": "C:\\Users\\rober\\source\\repos\\Agenda\\Entidades\\DTOs\\DTO\\ObrasSocialesDTO\\ObraSocialDTO.cs",
-              "RelativeDocumentMoniker": "Entidades\\DTOs\\DTO\\ObrasSocialesDTO\\ObraSocialDTO.cs",
-              "ToolTip": "C:\\Users\\rober\\source\\repos\\Agenda\\Entidades\\DTOs\\DTO\\ObrasSocialesDTO\\ObraSocialDTO.cs",
-              "RelativeToolTip": "Entidades\\DTOs\\DTO\\ObrasSocialesDTO\\ObraSocialDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 21,
+              "Title": "Calendario.cs",
+              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Entidades\\Calendario.cs",
+              "RelativeDocumentMoniker": "Entidades\\Calendario.cs",
+              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Entidades\\Calendario.cs",
+              "RelativeToolTip": "Entidades\\Calendario.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAAwB0AAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T23:22:15.844Z"
+              "WhenOpened": "2025-06-07T03:41:24.198Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "VerObraSocialDTO.cs",
-              "DocumentMoniker": "C:\\Users\\rober\\source\\repos\\Agenda\\Entidades\\DTOs\\DTO\\ObrasSocialesDTO\\VerObraSocialDTO.cs",
-              "RelativeDocumentMoniker": "Entidades\\DTOs\\DTO\\ObrasSocialesDTO\\VerObraSocialDTO.cs",
-              "ToolTip": "C:\\Users\\rober\\source\\repos\\Agenda\\Entidades\\DTOs\\DTO\\ObrasSocialesDTO\\VerObraSocialDTO.cs",
-              "RelativeToolTip": "Entidades\\DTOs\\DTO\\ObrasSocialesDTO\\VerObraSocialDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 22,
+              "Title": "CrearCalendarioDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Entidades\\DTOs\\DTO\\CalendarioDTO\\CrearCalendarioDTO.cs",
+              "RelativeDocumentMoniker": "Entidades\\DTOs\\DTO\\CalendarioDTO\\CrearCalendarioDTO.cs",
+              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Entidades\\DTOs\\DTO\\CalendarioDTO\\CrearCalendarioDTO.cs",
+              "RelativeToolTip": "Entidades\\DTOs\\DTO\\CalendarioDTO\\CrearCalendarioDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T23:21:53.464Z"
+              "WhenOpened": "2025-06-07T04:44:44.283Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "IAuthService.cs",
-              "DocumentMoniker": "C:\\Users\\rober\\source\\repos\\Agenda\\Interfaces\\IAuthService.cs",
-              "RelativeDocumentMoniker": "Interfaces\\IAuthService.cs",
-              "ToolTip": "C:\\Users\\rober\\source\\repos\\Agenda\\Interfaces\\IAuthService.cs",
-              "RelativeToolTip": "Interfaces\\IAuthService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAsAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 25,
+              "Title": "ObrasSocialesController.cs",
+              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Controllers\\ObrasSocialesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ObrasSocialesController.cs",
+              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Controllers\\ObrasSocialesController.cs",
+              "RelativeToolTip": "Controllers\\ObrasSocialesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T17:50:44.746Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "AuthService.cs",
-              "DocumentMoniker": "C:\\Users\\rober\\source\\repos\\Agenda\\Servicios\\AuthService.cs",
-              "RelativeDocumentMoniker": "Servicios\\AuthService.cs",
-              "ToolTip": "C:\\Users\\rober\\source\\repos\\Agenda\\Servicios\\AuthService.cs",
-              "RelativeToolTip": "Servicios\\AuthService.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAQwCMAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T02:18:10.282Z"
+              "WhenOpened": "2025-06-07T06:57:19.954Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 32,
-              "Title": "TurnoController.cs",
-              "DocumentMoniker": "C:\\Users\\rober\\source\\repos\\Agenda\\Controllers\\TurnoController.cs",
-              "RelativeDocumentMoniker": "Controllers\\TurnoController.cs",
-              "ToolTip": "C:\\Users\\rober\\source\\repos\\Agenda\\Controllers\\TurnoController.cs",
-              "RelativeToolTip": "Controllers\\TurnoController.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAwwCAAAAAFAAAAAAAAAA==",
+              "Title": "20250607043657_nulleableElTurno.cs",
+              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Migrations\\20250607043657_nulleableElTurno.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250607043657_nulleableElTurno.cs",
+              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Migrations\\20250607043657_nulleableElTurno.cs",
+              "RelativeToolTip": "Migrations\\20250607043657_nulleableElTurno.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T01:48:49.646Z"
+              "WhenOpened": "2025-06-07T04:36:57.761Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "Usuario.cs",
-              "DocumentMoniker": "C:\\Users\\rober\\source\\repos\\Agenda\\Entidades\\Usuario.cs",
-              "RelativeDocumentMoniker": "Entidades\\Usuario.cs",
-              "ToolTip": "C:\\Users\\rober\\source\\repos\\Agenda\\Entidades\\Usuario.cs",
-              "RelativeToolTip": "Entidades\\Usuario.cs",
+              "DocumentIndex": 28,
+              "Title": "BadRequestException.cs",
+              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Exceptions\\BadRequestException.cs",
+              "RelativeDocumentMoniker": "Exceptions\\BadRequestException.cs",
+              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Exceptions\\BadRequestException.cs",
+              "RelativeToolTip": "Exceptions\\BadRequestException.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T02:23:20.391Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-07T03:42:58.048Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "20250423211853_init.cs",
-              "DocumentMoniker": "C:\\Users\\rober\\source\\repos\\Agenda\\Migrations\\20250423211853_init.cs",
-              "RelativeDocumentMoniker": "Migrations\\20250423211853_init.cs",
-              "ToolTip": "C:\\Users\\rober\\source\\repos\\Agenda\\Migrations\\20250423211853_init.cs",
-              "RelativeToolTip": "Migrations\\20250423211853_init.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T21:18:53.679Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "20250423181824_init.cs",
-              "DocumentMoniker": "C:\\Users\\rober\\source\\repos\\Agenda\\Migrations\\20250423181824_init.cs",
-              "RelativeDocumentMoniker": "Migrations\\20250423181824_init.cs",
-              "ToolTip": "C:\\Users\\rober\\source\\repos\\Agenda\\Migrations\\20250423181824_init.cs",
-              "RelativeToolTip": "Migrations\\20250423181824_init.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T18:18:25.189Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\rober\\source\\repos\\Agenda\\Base\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "Base\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\rober\\source\\repos\\Agenda\\Base\\AppDbContext.cs",
-              "RelativeToolTip": "Base\\AppDbContext.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAAwD8AAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T01:35:15.138Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "OdontologosDTO.cs",
-              "DocumentMoniker": "C:\\Users\\rober\\source\\repos\\Agenda\\Entidades\\DTOs\\DTO\\OdontologosDTO\\OdontologosDTO.cs",
-              "RelativeDocumentMoniker": "Entidades\\DTOs\\DTO\\OdontologosDTO\\OdontologosDTO.cs",
-              "ToolTip": "C:\\Users\\rober\\source\\repos\\Agenda\\Entidades\\DTOs\\DTO\\OdontologosDTO\\OdontologosDTO.cs",
-              "RelativeToolTip": "Entidades\\DTOs\\DTO\\OdontologosDTO\\OdontologosDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAYAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T17:32:02.613Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "HasherService.cs",
-              "DocumentMoniker": "C:\\Users\\rober\\source\\repos\\Agenda\\Servicios\\HasherService.cs",
-              "RelativeDocumentMoniker": "Servicios\\HasherService.cs",
-              "ToolTip": "C:\\Users\\rober\\source\\repos\\Agenda\\Servicios\\HasherService.cs",
-              "RelativeToolTip": "Servicios\\HasherService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T18:13:53.377Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "IPasswordHasher.cs",
-              "DocumentMoniker": "C:\\Users\\rober\\source\\repos\\Agenda\\Interfaces\\IPasswordHasher.cs",
-              "RelativeDocumentMoniker": "Interfaces\\IPasswordHasher.cs",
-              "ToolTip": "C:\\Users\\rober\\source\\repos\\Agenda\\Interfaces\\IPasswordHasher.cs",
-              "RelativeToolTip": "Interfaces\\IPasswordHasher.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T18:13:34.672Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "C:\\Users\\rober\\source\\repos\\Agenda\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "appsettings.Development.json",
-              "ToolTip": "C:\\Users\\rober\\source\\repos\\Agenda\\appsettings.Development.json",
-              "RelativeToolTip": "appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-23T18:22:21.693Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "RegistroDto.cs",
-              "DocumentMoniker": "C:\\Users\\rober\\source\\repos\\Agenda\\Entidades\\DTOs\\RegistroDto.cs",
-              "RelativeDocumentMoniker": "Entidades\\DTOs\\RegistroDto.cs",
-              "ToolTip": "C:\\Users\\rober\\source\\repos\\Agenda\\Entidades\\DTOs\\RegistroDto.cs",
-              "RelativeToolTip": "Entidades\\DTOs\\RegistroDto.cs",
+              "DocumentIndex": 29,
+              "Title": "MensajePersonlaizadoException.cs",
+              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Exceptions\\MensajePersonlaizadoException.cs",
+              "RelativeDocumentMoniker": "Exceptions\\MensajePersonlaizadoException.cs",
+              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Exceptions\\MensajePersonlaizadoException.cs",
+              "RelativeToolTip": "Exceptions\\MensajePersonlaizadoException.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T02:15:35.715Z"
+              "WhenOpened": "2025-06-07T04:50:15.253Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
-              "Title": "LoginDto.cs",
-              "DocumentMoniker": "C:\\Users\\rober\\source\\repos\\Agenda\\Entidades\\DTOs\\LoginDto.cs",
-              "RelativeDocumentMoniker": "Entidades\\DTOs\\LoginDto.cs",
-              "ToolTip": "C:\\Users\\rober\\source\\repos\\Agenda\\Entidades\\DTOs\\LoginDto.cs",
-              "RelativeToolTip": "Entidades\\DTOs\\LoginDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 30,
+              "Title": "20250424041847_fixdni.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Migrations\\20250424041847_fixdni.Designer.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250424041847_fixdni.Designer.cs",
+              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Migrations\\20250424041847_fixdni.Designer.cs",
+              "RelativeToolTip": "Migrations\\20250424041847_fixdni.Designer.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAjwBAAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T02:15:34.555Z"
+              "WhenOpened": "2025-06-07T03:59:47.464Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "AuthResponse.cs",
-              "DocumentMoniker": "C:\\Users\\rober\\source\\repos\\Agenda\\Entidades\\DTOs\\AuthResponse.cs",
-              "RelativeDocumentMoniker": "Entidades\\DTOs\\AuthResponse.cs",
-              "ToolTip": "C:\\Users\\rober\\source\\repos\\Agenda\\Entidades\\DTOs\\AuthResponse.cs",
-              "RelativeToolTip": "Entidades\\DTOs\\AuthResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T02:15:36.938Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 44,
-              "Title": "20250423174233_init.cs",
-              "DocumentMoniker": "C:\\Users\\rober\\source\\repos\\Agenda\\Migrations\\20250423174233_init.cs",
-              "RelativeDocumentMoniker": "Migrations\\20250423174233_init.cs",
-              "ToolTip": "C:\\Users\\rober\\source\\repos\\Agenda\\Migrations\\20250423174233_init.cs",
-              "RelativeToolTip": "Migrations\\20250423174233_init.cs",
+              "DocumentIndex": 31,
+              "Title": "CalendarioDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Entidades\\DTOs\\DTO\\CalendarioDTO\\CalendarioDTO.cs",
+              "RelativeDocumentMoniker": "Entidades\\DTOs\\DTO\\CalendarioDTO\\CalendarioDTO.cs",
+              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Entidades\\DTOs\\DTO\\CalendarioDTO\\CalendarioDTO.cs",
+              "RelativeToolTip": "Entidades\\DTOs\\DTO\\CalendarioDTO\\CalendarioDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T17:42:34.002Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 46,
-              "Title": "EditarTurnosDTO.cs",
-              "DocumentMoniker": "C:\\Users\\rober\\source\\repos\\Agenda\\Entidades\\DTOs\\DTO\\TurnosDTO\\EditarTurnosDTO.cs",
-              "RelativeDocumentMoniker": "Entidades\\DTOs\\DTO\\TurnosDTO\\EditarTurnosDTO.cs",
-              "ToolTip": "C:\\Users\\rober\\source\\repos\\Agenda\\Entidades\\DTOs\\DTO\\TurnosDTO\\EditarTurnosDTO.cs",
-              "RelativeToolTip": "Entidades\\DTOs\\DTO\\TurnosDTO\\EditarTurnosDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABRAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T02:33:02.276Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 45,
-              "Title": "Turno.cs",
-              "DocumentMoniker": "C:\\Users\\rober\\source\\repos\\Agenda\\Entidades\\Turno.cs",
-              "RelativeDocumentMoniker": "Entidades\\Turno.cs",
-              "ToolTip": "C:\\Users\\rober\\source\\repos\\Agenda\\Entidades\\Turno.cs",
-              "RelativeToolTip": "Entidades\\Turno.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T02:57:43.78Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 47,
-              "Title": "ITurnoService.cs",
-              "DocumentMoniker": "C:\\Users\\rober\\source\\repos\\Agenda\\Interfaces\\ITurnoService.cs",
-              "RelativeDocumentMoniker": "Interfaces\\ITurnoService.cs",
-              "ToolTip": "C:\\Users\\rober\\source\\repos\\Agenda\\Interfaces\\ITurnoService.cs",
-              "RelativeToolTip": "Interfaces\\ITurnoService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T01:54:48.465Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 48,
-              "Title": "20250422013831_init.cs",
-              "DocumentMoniker": "C:\\Users\\rober\\source\\repos\\Agenda\\Migrations\\20250422013831_init.cs",
-              "RelativeDocumentMoniker": "Migrations\\20250422013831_init.cs",
-              "ToolTip": "C:\\Users\\rober\\source\\repos\\Agenda\\Migrations\\20250422013831_init.cs",
-              "RelativeToolTip": "Migrations\\20250422013831_init.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T01:38:31.562Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 49,
-              "Title": "20250422013525_init.cs",
-              "DocumentMoniker": "C:\\Users\\rober\\source\\repos\\Agenda\\Migrations\\20250422013525_init.cs",
-              "RelativeDocumentMoniker": "Migrations\\20250422013525_init.cs",
-              "ToolTip": "C:\\Users\\rober\\source\\repos\\Agenda\\Migrations\\20250422013525_init.cs",
-              "RelativeToolTip": "Migrations\\20250422013525_init.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T01:35:26.02Z"
+              "WhenOpened": "2025-06-07T03:40:41.02Z"
             }
           ]
         }

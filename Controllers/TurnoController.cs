@@ -1,62 +1,120 @@
-﻿using Agenda.Entidades;
-using Agenda.Entidades.DTOs;
+﻿using Agenda.Base;
 using Agenda.Entidades.DTOs.DTO.TurnosDTO;
 using Agenda.Interfaces;
-using Agenda.Servicios;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using System.Security.Claims;
 
 namespace Agenda.Controllers
 {
-	[Authorize]
-	[ApiController]
-	[Route("api/[controller]")]
-	public class TurnoController : ControllerBase
-	{
-		private readonly ITurnoService _turnoService;
+     [ApiController]
+    [Route("api/[controller]")]
+    [Authorize(Roles = "Administrador")]
+    public class TurnoController : ControllerBase
+    {
+        private readonly ITurnoService _turnoService;
+        private readonly AppDbContext _context;
+        public TurnoController(ITurnoService turnoService, AppDbContext AppDbContext)
+        {
+            _context = AppDbContext;
+            _turnoService = turnoService;
+        }
+               
 
-		public TurnoController(ITurnoService turnoService)
-		{
-			_turnoService = turnoService;
-		}
+        private int ObtenerUsuarioId() => int.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier)!);
 
-		[HttpGet]
-		public async Task<IActionResult> GetTurnos()
-		{
-			var turnos = await _turnoService.ObtenerTurnos(User);
-			return Ok(turnos);
-		}
+        [HttpGet("{calendarioId}")]
+        public async Task<ActionResult<List<TurnoDTO>>> ObtenerTurnos(int calendarioId)
+        {
+            var turnos = await _turnoService.ObtenerTurnosAsync(calendarioId, ObtenerUsuarioId());
+            return Ok(turnos);
+        }
 
-		[Authorize(Roles = "Administrador")]
-		[HttpPost]
-		public async Task<IActionResult> Crear([FromBody] CrearTurnosDTO dto)
-		{
-			var result = await _turnoService.CrearTurno(dto, User);
-			return Ok(result);
-		}
+        [HttpGet("filtrar/{calendarioId}")]
+        public async Task<ActionResult<ResTurnosFiltrados>> Filtrar(int calendarioId, [FromQuery] DateTime fechaInicio, [FromQuery] DateTime fechaFin)
+        {
+            var result = await _turnoService.FiltrarPorFechasAsync(calendarioId, fechaInicio, fechaFin, ObtenerUsuarioId());
+            if (result == null) return BadRequest("Calendario no encontrado o parámetros inválidos.");
+            return Ok(result);
+        }
 
-		[Authorize(Roles = "Administrador")]
-		[HttpPut("{id}")]
-		public async Task<IActionResult> Actualizar(int id, [FromBody] CrearTurnosDTO dto)
-		{
-			var result = await _turnoService.ActualizarTurno(id, dto, User);
-			return Ok(result);
-		}
+        [HttpPost("reservar/{turnoId}")]
+        public async Task<IActionResult> Reservar(int turnoId, [FromBody] ReservarTurnoDTO dto)
+        {
+            var success = await _turnoService.ReservarTurnoAsync(turnoId, dto, ObtenerUsuarioId());
+            return success ? Ok("Turno reservado.") : BadRequest("No se pudo reservar el turno.");
+        }
 
-		[Authorize(Roles = "Administrador")]
-		[HttpDelete("{id}")]
-		public async Task<IActionResult> Eliminar(int id)
-		{
-			var result = await _turnoService.EliminarTurno(id, User);
-			return Ok(result);
-		}
+        [HttpPost("cancelar/{turnoId}")]
+        public async Task<IActionResult> Cancelar(int turnoId)
+        {
+            var success = await _turnoService.CancelarTurnoAsync(turnoId, ObtenerUsuarioId());
+            return success ? Ok("Turno cancelado.") : BadRequest("No se pudo cancelar el turno.");
+        }
 
-		[Authorize(Roles = "Odontologo")]
-		[HttpPut("{id}/estado")]
-		public async Task<IActionResult> CambiarEstado(int id, [FromBody] EstadoTurno estado)
-		{
-			var result = await _turnoService.CambiarEstado(id, estado, User);
-			return Ok(result);
-		}
-	}
+        [HttpGet("mi-calendario")]
+        [Authorize]
+        public async Task<IActionResult> GetCalendarioActivo()
+        {            
+            int userId = int.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier));
+            
+            var ultimo = await _context.Calendarios
+                .Where(c => c.IdUsuario == userId)
+                .OrderByDescending(c => c.FechaFin)
+                .FirstOrDefaultAsync();
+
+            if (ultimo == null)
+                return NotFound(); 
+            
+            return Ok(new
+            {
+                calendarioId = ultimo.Id,
+                fechaInicio = ultimo.FechaInicio,
+                fechaFin = ultimo.FechaFin
+            });
+        }
+
+
+        [Authorize]
+        [HttpPut("{id}/asistencia")]
+        public async Task<IActionResult> MarcarAsistencia(int id, [FromBody] MarcarAsistenciaDTO dto)
+        {
+            var usuarioId = ObtenerUsuarioId(); 
+
+            var result = await _turnoService.MarcarAsistenciaAsync(id, dto.Asistio, usuarioId);
+            if (!result) return BadRequest("No se pudo marcar la asistencia.");
+
+            return Ok("Asistencia marcada correctamente.");
+        }
+
+        [Authorize]
+        [HttpPut("{id}/cancelar")]
+        public async Task<IActionResult> CancelarTurno(int id)
+        {
+            var usuarioId = ObtenerUsuarioId(); 
+
+            var result = await _turnoService.CancelarTurnoAsync(id, usuarioId);
+            if (!result) return BadRequest("No se pudo cancelar el turno.");
+
+            return Ok("Turno cancelado correctamente.");
+        }
+
+
+        [HttpPost("crear/{calendarioId}")]
+        public async Task<IActionResult> CrearTurnos(int calendarioId)
+        {            
+            var calendario = await _turnoService.ObtenerCalendarioEntidadAsync(calendarioId, ObtenerUsuarioId());
+            if (calendario == null) return BadRequest("Calendario no encontrado.");
+            await _turnoService.CrearTurnosAsync(
+                Enumerable.Range(0, (int)(calendario.FechaFin - calendario.FechaInicio).TotalDays + 1)
+                          .Select(i => calendario.FechaInicio.AddDays(i)).ToList(),
+                Enumerable.Range(0, (int)((calendario.HoraFinTurnos - calendario.HoraInicioTurnos).TotalMinutes / calendario.IntervaloTurnos.TotalMinutes))
+                          .Select(i => calendario.HoraInicioTurnos.Add(TimeSpan.FromMinutes(calendario.IntervaloTurnos.TotalMinutes * i))).ToList(),
+                calendario);
+            return Ok("Turnos generados.");
+        }
+    }
+ 
+    
 }

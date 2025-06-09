@@ -1,24 +1,48 @@
 ﻿using Agenda.Entidades;
 using Agenda.Entidades.DTOs;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 public class Turno
 {
 
-	public int Id { get; set; }
-	public DateTime FechaHora { get; set; }
+    
+    public int Id { get; set; }
 
-	public EstadoTurno Estado { get; set; } = EstadoTurno.Pendiente;
+    [Required]
+    [Column(TypeName = "date")]
+    public DateTime Fecha { get; set; }
 
-	public int UsuarioId { get; set; }
-	public Usuario Usuario { get; set; }
+    [Required]
+    [Column(TypeName = "TIME(0)")]
+    public TimeSpan Horario { get; set; }
 
-	public int OdontologoId { get; set; }
-	public Odontologo Odontologo { get; set; }
+    [Required]
+    public bool Disponible { get; set; }
 
-	public int PacienteId { get; set; }
-	public Paciente Paciente { get; set; }
+    public bool? Asistio { get; set; }
+  
 
-	public bool Confirmado { get; set; } = false;
+    [Required]
+    public int UsuarioId { get; set; }
+    public Usuario Usuario { get; set; }
+
+    [Required]
+    public int IdCalendario { get; set; }
+    public Calendario Calendario { get; set; }
+
+  
+    
+
+    // Relaciones con entidades propias
+    public int? IdPaciente { get; set; }
+    public Paciente? Paciente { get; set; }
+
+    public int? OdontologoId { get; set; }
+    public Odontologo? Odontologo { get; set; }
+
+    public int? ObraSocialId { get; set; }
+    public ObraSocial? ObraSocial { get; set; }
 
 
 }

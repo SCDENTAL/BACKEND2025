@@ -22,6 +22,46 @@ namespace Agenda.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("Agenda.Entidades.Calendario", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("CantidadHorarios")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("FechaFin")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("FechaInicio")
+                        .HasColumnType("datetime2");
+
+                    b.Property<TimeSpan>("HoraFinTurnos")
+                        .HasColumnType("time");
+
+                    b.Property<TimeSpan>("HoraInicioTurnos")
+                        .HasColumnType("time");
+
+                    b.Property<int>("IdUsuario")
+                        .HasColumnType("int");
+
+                    b.Property<TimeSpan>("IntervaloTurnos")
+                        .HasColumnType("time");
+
+                    b.Property<string>("Nombre")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("IdUsuario");
+
+                    b.ToTable("Calendarios");
+                });
+
             modelBuilder.Entity("Agenda.Entidades.DTOs.ObraSocial", b =>
                 {
                     b.Property<int>("Id")
@@ -183,19 +223,28 @@ namespace Agenda.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<bool>("Confirmado")
+                    b.Property<bool?>("Asistio")
                         .HasColumnType("bit");
 
-                    b.Property<int>("Estado")
+                    b.Property<bool>("Disponible")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime>("Fecha")
+                        .HasColumnType("date");
+
+                    b.Property<TimeSpan>("Horario")
+                        .HasColumnType("TIME(0)");
+
+                    b.Property<int>("IdCalendario")
                         .HasColumnType("int");
 
-                    b.Property<DateTime>("FechaHora")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("OdontologoId")
+                    b.Property<int?>("IdPaciente")
                         .HasColumnType("int");
 
-                    b.Property<int>("PacienteId")
+                    b.Property<int?>("ObraSocialId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("OdontologoId")
                         .HasColumnType("int");
 
                     b.Property<int>("UsuarioId")
@@ -203,13 +252,28 @@ namespace Agenda.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("OdontologoId");
+                    b.HasIndex("IdCalendario");
 
-                    b.HasIndex("PacienteId");
+                    b.HasIndex("IdPaciente");
+
+                    b.HasIndex("ObraSocialId");
+
+                    b.HasIndex("OdontologoId");
 
                     b.HasIndex("UsuarioId");
 
                     b.ToTable("Turnos");
+                });
+
+            modelBuilder.Entity("Agenda.Entidades.Calendario", b =>
+                {
+                    b.HasOne("Agenda.Entidades.Usuario", "Usuario")
+                        .WithMany("Calendarios")
+                        .HasForeignKey("IdUsuario")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("Usuario");
                 });
 
             modelBuilder.Entity("Agenda.Entidades.DTOs.ObraSocial", b =>
@@ -265,17 +329,25 @@ namespace Agenda.Migrations
 
             modelBuilder.Entity("Turno", b =>
                 {
-                    b.HasOne("Agenda.Entidades.Odontologo", "Odontologo")
+                    b.HasOne("Agenda.Entidades.Calendario", "Calendario")
                         .WithMany("Turnos")
-                        .HasForeignKey("OdontologoId")
+                        .HasForeignKey("IdCalendario")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.HasOne("Agenda.Entidades.Paciente", "Paciente")
                         .WithMany("Turnos")
-                        .HasForeignKey("PacienteId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
+                        .HasForeignKey("IdPaciente")
+                        .OnDelete(DeleteBehavior.Restrict);
+
+                    b.HasOne("Agenda.Entidades.DTOs.ObraSocial", "ObraSocial")
+                        .WithMany()
+                        .HasForeignKey("ObraSocialId");
+
+                    b.HasOne("Agenda.Entidades.Odontologo", "Odontologo")
+                        .WithMany("Turnos")
+                        .HasForeignKey("OdontologoId")
+                        .OnDelete(DeleteBehavior.Restrict);
 
                     b.HasOne("Agenda.Entidades.Usuario", "Usuario")
                         .WithMany("Turnos")
@@ -283,11 +355,20 @@ namespace Agenda.Migrations
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
+                    b.Navigation("Calendario");
+
+                    b.Navigation("ObraSocial");
+
                     b.Navigation("Odontologo");
 
                     b.Navigation("Paciente");
 
                     b.Navigation("Usuario");
+                });
+
+            modelBuilder.Entity("Agenda.Entidades.Calendario", b =>
+                {
+                    b.Navigation("Turnos");
                 });
 
             modelBuilder.Entity("Agenda.Entidades.DTOs.ObraSocial", b =>
@@ -312,6 +393,8 @@ namespace Agenda.Migrations
 
             modelBuilder.Entity("Agenda.Entidades.Usuario", b =>
                 {
+                    b.Navigation("Calendarios");
+
                     b.Navigation("ObrasSociales");
 
                     b.Navigation("Odontologos");

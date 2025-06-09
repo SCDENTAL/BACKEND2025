@@ -1,9 +1,10 @@
-using System.Text;
 using Agenda.Base;
 using Agenda.Interfaces;
 using Agenda.Servicios;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
+using System.Net;
+using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -79,6 +80,8 @@ builder.Services.AddCors(options =>
 
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<TokenService,TokenService>();
+builder.Services.AddScoped<ICalendarioService, CalendarioService>();
+
 builder.Services.AddScoped<ITurnoService, TurnoService>();
 builder.Services.AddScoped<IObrasSocialesService, ObraSocialService>();
 builder.Services.AddScoped<IOdontologoService, OdontologoService>();
@@ -97,6 +100,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+
 
 app.Use(async (context, next) =>
 {

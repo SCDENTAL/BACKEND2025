@@ -18,6 +18,8 @@ namespace Agenda.Entidades
         public ICollection<Paciente> Pacientes { get; set; }
         public ICollection<ObraSocial> ObrasSociales { get; set; }
         public ICollection<Turno> Turnos { get; set; }
+        public ICollection<Calendario> Calendarios { get; set; }
+
 
     }
 }

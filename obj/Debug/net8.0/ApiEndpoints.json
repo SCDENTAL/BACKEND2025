@@ -17,6 +17,16 @@
   },
   {
     "ContainingType": "Agenda.Controllers.AuthController",
+    "Method": "Ping",
+    "RelativePath": "api/Auth/ping",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Agenda.Controllers.AuthController",
     "Method": "Registro",
     "RelativePath": "api/Auth/registro",
     "HttpMethod": "POST",
@@ -26,6 +36,130 @@
       {
         "Name": "dto",
         "Type": "Agenda.Entidades.DTOs.RegistroDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Agenda.API.Controllers.CalendarioController",
+    "Method": "ObtenerTodos",
+    "RelativePath": "api/Calendario",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Agenda.Entidades.DTOs.DTO.CalendarioDTO.CalendarioDTO, Agenda, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Agenda.API.Controllers.CalendarioController",
+    "Method": "Crear",
+    "RelativePath": "api/Calendario",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Agenda.Entidades.DTOs.DTO.CalendarioDTO.CrearCalendarioDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Agenda.Entidades.DTOs.DTO.CalendarioDTO.CalendarioDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Agenda.API.Controllers.CalendarioController",
+    "Method": "Eliminar",
+    "RelativePath": "api/Calendario",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Agenda.API.Controllers.CalendarioController",
+    "Method": "ObtenerPorId",
+    "RelativePath": "api/Calendario/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Agenda.Entidades.DTOs.DTO.CalendarioDTO.CalendarioDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Agenda.API.Controllers.CalendarioController",
+    "Method": "Editar",
+    "RelativePath": "api/Calendario/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "Agenda.Entidades.DTOs.DTO.CalendarioDTO.CrearCalendarioDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Agenda.API.Controllers.CalendarioController",
+    "Method": "Extender",
+    "RelativePath": "api/Calendario/{id}/extender",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "Agenda.Entidades.DTOs.DTO.CalendarioDTO.ExtenderCalendarioDTO",
         "IsRequired": true
       }
     ],
@@ -270,47 +404,21 @@
   },
   {
     "ContainingType": "Agenda.Controllers.TurnoController",
-    "Method": "CrearTurno",
-    "RelativePath": "api/Turno",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "dto",
-        "Type": "Agenda.Entidades.DTOs.DTO.TurnosDTO.CrearTurnosDTO",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Agenda.Controllers.TurnoController",
     "Method": "ObtenerTurnos",
-    "RelativePath": "api/Turno/{usuarioId}",
+    "RelativePath": "api/Turno/{calendarioId}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "usuarioId",
+        "Name": "calendarioId",
         "Type": "System.Int32",
         "IsRequired": true
       }
     ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Agenda.Controllers.WeatherForecastController",
-    "Method": "Get",
-    "RelativePath": "WeatherForecast",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[Agenda.WeatherForecast, Agenda, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.List\u00601[[Agenda.Entidades.DTOs.DTO.TurnosDTO.TurnoDTO, Agenda, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -318,7 +426,142 @@
         ],
         "StatusCode": 200
       }
+    ]
+  },
+  {
+    "ContainingType": "Agenda.Controllers.TurnoController",
+    "Method": "MarcarAsistencia",
+    "RelativePath": "api/Turno/{id}/asistencia",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "Agenda.Entidades.DTOs.DTO.TurnosDTO.MarcarAsistenciaDTO",
+        "IsRequired": true
+      }
     ],
-    "EndpointName": "GetWeatherForecast"
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Agenda.Controllers.TurnoController",
+    "Method": "CancelarTurno",
+    "RelativePath": "api/Turno/{id}/cancelar",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Agenda.Controllers.TurnoController",
+    "Method": "Cancelar",
+    "RelativePath": "api/Turno/cancelar/{turnoId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "turnoId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Agenda.Controllers.TurnoController",
+    "Method": "CrearTurnos",
+    "RelativePath": "api/Turno/crear/{calendarioId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "calendarioId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Agenda.Controllers.TurnoController",
+    "Method": "Filtrar",
+    "RelativePath": "api/Turno/filtrar/{calendarioId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "calendarioId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "fechaInicio",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "fechaFin",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Agenda.Entidades.DTOs.DTO.TurnosDTO.ResTurnosFiltrados",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Agenda.Controllers.TurnoController",
+    "Method": "GetCalendarioActivo",
+    "RelativePath": "api/Turno/mi-calendario",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Agenda.Controllers.TurnoController",
+    "Method": "Reservar",
+    "RelativePath": "api/Turno/reservar/{turnoId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "turnoId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "Agenda.Entidades.DTOs.DTO.TurnosDTO.ReservarTurnoDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

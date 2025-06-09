@@ -1,141 +1,148 @@
 ﻿using Agenda.Base;
 using Agenda.Entidades;
-using Agenda.Entidades.DTOs;
 using Agenda.Entidades.DTOs.DTO.TurnosDTO;
 using Agenda.Interfaces;
 using Microsoft.EntityFrameworkCore;
-using System.Security.Claims;
 
-namespace Agenda.Servicios
+public class TurnoService : ITurnoService
 {
-	
+    private readonly AppDbContext _context;
 
-	public class TurnoService : ITurnoService
-	{
-		private readonly AppDbContext _context;
+    public TurnoService(AppDbContext context) => _context = context;
 
-		public TurnoService(AppDbContext context)
-		{
-			_context = context;
-		}
+    public async Task<Calendario?> ObtenerCalendarioEntidadAsync(int calendarioId, int usuarioId)
+    {
+        return await _context.Calendarios
+            .FirstOrDefaultAsync(c => c.Id == calendarioId && c.IdUsuario == usuarioId);
+    }
 
-		public async Task<List<TurnoDTO>> ObtenerTurnos(ClaimsPrincipal user)
-		{
-			var usuarioId = int.Parse(user.FindFirst(ClaimTypes.NameIdentifier).Value);
-			var rol = user.FindFirst(ClaimTypes.Role).Value;
+    public async Task<List<TurnoDTO>> ObtenerTurnosAsync(int calendarioId, int usuarioId)
+    {
+        var calendario = await ObtenerCalendarioEntidadAsync(calendarioId, usuarioId);
+        if (calendario == null) return new List<TurnoDTO>();
 
-			if (rol == "Administrador")
-			{
-				return await _context.Turnos
-					.Where(t => t.UsuarioId == usuarioId)
-					.Include(t => t.Odontologo)
-					.Include(t => t.Paciente)
-					.Select(t => new TurnoDTO
-					{
-						Id = t.Id,
-						FechaHora = t.FechaHora,
-						OdontologoNombre = t.Odontologo.Nombre,
-						PacienteNombre = t.Paciente.Nombre
-					})
-					.ToListAsync();
-			}
-			else if (rol == "Odontologo")
-			{
-				var odontologo = await _context.Odontologos.FirstOrDefaultAsync(o => o.UsuarioId == usuarioId);
-				if (odontologo == null) return new List<TurnoDTO>();
+        var turnos = await _context.Turnos
+            .Include(t => t.Paciente)
+            .Include(t => t.Odontologo)
+            .Include(t => t.ObraSocial)
+            .Where(t => t.IdCalendario == calendarioId)
+            .ToListAsync();
 
-				return await _context.Turnos
-					.Where(t => t.OdontologoId == odontologo.Id)
-					.Include(t => t.Paciente)
-					.Select(t => new TurnoDTO
-					{
-						Id = t.Id,
-						FechaHora = t.FechaHora,
-						OdontologoNombre = odontologo.Nombre,
-						PacienteNombre = t.Paciente.Nombre
-					})
-					.ToListAsync();
-			}
+        return turnos.Select(t => new TurnoDTO
+        {
+            Id = t.Id,
+            Fecha = t.Fecha,
+            Horario = t.Horario,
+            Disponible = t.Disponible,
+            Asistio = t.Asistio,
+            IdPaciente = t.IdPaciente,
+            NombrePaciente = t.Paciente?.Nombre,
+            OdontologoId = t.OdontologoId,
+            NombreOdontologo = t.Odontologo?.Nombre,
+            IdObraSocial = t.ObraSocialId,
+            NombreObraSocial = t.ObraSocial?.Nombre
+        }).ToList();
+    }
 
-			return new List<TurnoDTO>();
-		}
+    public async Task<ResTurnosFiltrados> FiltrarPorFechasAsync(int calendarioId, DateTime fechaInicio, DateTime fechaFin, int usuarioId)
+    {
+        var turnos = await _context.Turnos
+            .Include(t => t.Paciente)
+            .Include(t => t.Odontologo)
+            .Include(t => t.ObraSocial)
+            .Where(t => t.IdCalendario == calendarioId && t.Fecha.Date >= fechaInicio.Date && t.Fecha.Date <= fechaFin.Date)
+            .ToListAsync();
 
-		public async Task<string> CrearTurno(CrearTurnosDTO dto, ClaimsPrincipal user)
-		{
-			var usuarioId = int.Parse(user.FindFirst(ClaimTypes.NameIdentifier).Value);
+        return new ResTurnosFiltrados
+        {
+            Lunes = MapDia(turnos, DayOfWeek.Monday),
+            Martes = MapDia(turnos, DayOfWeek.Tuesday),
+            Miercoles = MapDia(turnos, DayOfWeek.Wednesday),
+            Jueves = MapDia(turnos, DayOfWeek.Thursday),
+            Viernes = MapDia(turnos, DayOfWeek.Friday),
+            Sabado = MapDia(turnos, DayOfWeek.Saturday),
+            Domingo = MapDia(turnos, DayOfWeek.Sunday),
+            CantidadHorarios = (await ObtenerCalendarioEntidadAsync(calendarioId, usuarioId))?.CantidadHorarios ?? 0
+        };
+    }
 
-			// Validaciones
-			var pacienteExiste = await _context.Pacientes.AnyAsync(p => p.Id == dto.PacienteId && p.UsuarioId == usuarioId);
-			var odontologoExiste = await _context.Odontologos.AnyAsync(o => o.Id == dto.OdontologoId && o.UsuarioId == usuarioId);
+    public async Task<bool> ReservarTurnoAsync(int turnoId, ReservarTurnoDTO dto, int usuarioId)
+    {
+        var turno = await _context.Turnos.FirstOrDefaultAsync(t => t.Id == turnoId && t.UsuarioId == usuarioId);
+        if (turno == null || !turno.Disponible) return false;
 
-			if (!pacienteExiste || !odontologoExiste)
-				return "Paciente u odontólogo no válidos.";
+        if (!await _context.Pacientes.AnyAsync(p => p.Id == dto.IdPaciente && p.UsuarioId == usuarioId))
+            return false;
 
-			var solapado = await _context.Turnos.AnyAsync(t =>
-				t.OdontologoId == dto.OdontologoId &&
-				t.FechaHora == dto.FechaHora
-			);
+        turno.Disponible = false;
+        turno.IdPaciente = dto.IdPaciente;
+        turno.OdontologoId = dto.IdOdontologo;
+        turno.ObraSocialId = dto.IdObraSocial;
 
-			if (solapado)
-				return "Ya hay un turno asignado para esa fecha y hora.";
+        await _context.SaveChangesAsync();
+        return true;
+    }
 
-			var turno = new Turno
-			{
-				UsuarioId = usuarioId,
-				OdontologoId = dto.OdontologoId,
-				PacienteId = dto.PacienteId,
-				FechaHora = dto.FechaHora,
-				Estado = EstadoTurno.Pendiente
-			};
+    public async Task<bool> CancelarTurnoAsync(int turnoId, int usuarioId)
+    {
+        var turno = await _context.Turnos.FirstOrDefaultAsync(t => t.Id == turnoId && t.UsuarioId == usuarioId);
+        if (turno == null || turno.Disponible) return false;
 
-			_context.Turnos.Add(turno);
-			await _context.SaveChangesAsync();
+        turno.Disponible = true;
+        turno.Asistio = null;
+        turno.IdPaciente = null;
+        turno.OdontologoId = null;
+        turno.ObraSocialId = null;
 
-			return "Turno creado correctamente.";
-		}
+        await _context.SaveChangesAsync();
+        return true;
+    }
+    public async Task<bool> MarcarAsistenciaAsync(int turnoId, bool asistio, int usuarioId)
+    {
+        var turno = await _context.Turnos.FirstOrDefaultAsync(t => t.Id == turnoId && t.UsuarioId == usuarioId);
+        if (turno == null || turno.Disponible) 
+            
+            return false; 
 
-		public async Task<string> ActualizarTurno(int id, CrearTurnosDTO dto, ClaimsPrincipal user)
-		{
-			var usuarioId = int.Parse(user.FindFirst(ClaimTypes.NameIdentifier).Value);
+        turno.Asistio = asistio;
+        await _context.SaveChangesAsync();
+        return true;
+    }
 
-			var turno = await _context.Turnos.FirstOrDefaultAsync(t => t.Id == id && t.UsuarioId == usuarioId);
-			if (turno == null) return "Turno no encontrado.";
 
-			turno.FechaHora = dto.FechaHora;
-			turno.PacienteId = dto.PacienteId;
-			turno.OdontologoId = dto.OdontologoId;
+    public async Task CrearTurnosAsync(List<DateTime> fechas, List<TimeSpan> horarios, Calendario calendario)
+    {
+        foreach (var fecha in fechas)
+            foreach (var horario in horarios)
+                _context.Turnos.Add(new Turno
+                {
+                    Fecha = fecha,
+                    Horario = horario,
+                    Disponible = true,
+                    IdCalendario = calendario.Id,
+                    UsuarioId = calendario.IdUsuario
+                });
 
-			await _context.SaveChangesAsync();
-			return "Turno actualizado correctamente.";
-		}
+        await _context.SaveChangesAsync();
+    }
 
-		public async Task<string> EliminarTurno(int id, ClaimsPrincipal user)
-		{
-			var usuarioId = int.Parse(user.FindFirst(ClaimTypes.NameIdentifier).Value);
-
-			var turno = await _context.Turnos.FirstOrDefaultAsync(t => t.Id == id && t.UsuarioId == usuarioId);
-			if (turno == null) return "Turno no encontrado.";
-
-			_context.Turnos.Remove(turno);
-			await _context.SaveChangesAsync();
-
-			return "Turno eliminado correctamente.";
-		}
-
-		public async Task<string> CambiarEstado(int id, EstadoTurno nuevoEstado, ClaimsPrincipal user)
-		{
-			var usuarioId = int.Parse(user.FindFirst(ClaimTypes.NameIdentifier).Value);
-
-			var odontologo = await _context.Odontologos.FirstOrDefaultAsync(o => o.UsuarioId == usuarioId);
-			if (odontologo == null) return "Odontólogo no válido.";
-
-			var turno = await _context.Turnos.FirstOrDefaultAsync(t => t.Id == id && t.OdontologoId == odontologo.Id);
-			if (turno == null) return "Turno no encontrado o no asignado.";
-
-			turno.Estado = nuevoEstado;
-			await _context.SaveChangesAsync();
-
-			return "Estado del turno actualizado.";
-		}
-	}
+    private List<TurnoDTO> MapDia(List<Turno> turnos, DayOfWeek dia) =>
+        turnos.Where(t => t.Fecha.DayOfWeek == dia)
+              .Select(t => new TurnoDTO
+              {
+                  Id = t.Id,
+                  Fecha = t.Fecha,
+                  Horario = t.Horario,
+                  Disponible = t.Disponible,
+                  Asistio = t.Asistio,
+                  IdPaciente = t.IdPaciente,
+                  NombrePaciente = t.Paciente?.Nombre,
+                  OdontologoId = t.OdontologoId,
+                  NombreOdontologo = t.Odontologo?.Nombre,
+                  IdObraSocial = t.ObraSocialId,
+                  NombreObraSocial = t.ObraSocial?.Nombre
+              })
+              .ToList();
 }
+
+

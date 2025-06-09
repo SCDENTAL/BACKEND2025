@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Gj9zQ6yk7N4=",
+  "dgSpecHash": "L2ujowiyHm0=",
   "success": true,
-  "projectFilePath": "D:\\Proyectos 2025\\BACKEND2025\\Agenda.csproj",
+  "projectFilePath": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Agenda.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Mateo\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\Mateo\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

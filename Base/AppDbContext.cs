@@ -14,6 +14,8 @@ namespace Agenda.Base
         public DbSet<Paciente> Pacientes { get; set; }
         public DbSet<ObraSocial> ObrasSociales { get; set; }
         public DbSet<Turno> Turnos { get; set; }
+        public DbSet<Calendario> Calendarios { get; set; }
+
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -46,6 +48,20 @@ namespace Agenda.Base
                 .HasForeignKey(t => t.UsuarioId)
                 .OnDelete(DeleteBehavior.Restrict);
 
+            // Usuario -> Calendarios (NUEVO)
+            modelBuilder.Entity<Usuario>()
+                .HasMany(u => u.Calendarios)
+                .WithOne(c => c.Usuario)
+                .HasForeignKey(c => c.IdUsuario)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            // Calendario -> Turnos (NUEVO)
+            modelBuilder.Entity<Calendario>()
+                .HasMany(c => c.Turnos)
+                .WithOne(t => t.Calendario)
+                .HasForeignKey(t => t.IdCalendario)
+                .OnDelete(DeleteBehavior.Restrict);
+
             // Odontologo -> Turnos
             modelBuilder.Entity<Odontologo>()
                 .HasMany(o => o.Turnos)
@@ -57,7 +73,8 @@ namespace Agenda.Base
             modelBuilder.Entity<Paciente>()
                 .HasMany(p => p.Turnos)
                 .WithOne(t => t.Paciente)
-                .HasForeignKey(t => t.PacienteId)
+                .HasForeignKey(t => t.IdPaciente)
+                .IsRequired(false) 
                 .OnDelete(DeleteBehavior.Restrict);
 
             // ObraSocial -> Pacientes
@@ -72,12 +89,8 @@ namespace Agenda.Base
                 new Rol { Id = 1, Nombre = "Administrador" },
                 new Rol { Id = 2, Nombre = "Odontologo" }
    );
+
+
         }
-
-
-
-
-
-
     }
 }
