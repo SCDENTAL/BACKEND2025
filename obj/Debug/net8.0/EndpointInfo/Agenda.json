@@ -67,11 +67,30 @@
         }
       }
     },
-    "/api/Auth/ping": {
-      "get": {
+    "/api/Auth/crear-odontologo": {
+      "post": {
         "tags": [
           "Auth"
         ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegistroDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegistroDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegistroDto"
+              }
+            }
+          }
+        },
         "responses": {
           "200": {
             "description": "OK"
@@ -439,17 +458,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/CrearOdontologoDTO"
+                "$ref": "#/components/schemas/RegistroDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/CrearOdontologoDTO"
+                "$ref": "#/components/schemas/RegistroDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/CrearOdontologoDTO"
+                "$ref": "#/components/schemas/RegistroDto"
               }
             }
           }
@@ -670,51 +689,14 @@
         }
       }
     },
-    "/api/Turno/{calendarioId}": {
+    "/api/Turno/mis-turnos-hoy": {
       "get": {
         "tags": [
           "Turno"
         ],
-        "parameters": [
-          {
-            "name": "calendarioId",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
         "responses": {
           "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/TurnoDTO"
-                  }
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/TurnoDTO"
-                  }
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/TurnoDTO"
-                  }
-                }
-              }
-            }
+            "description": "OK"
           }
         }
       }
@@ -852,6 +834,18 @@
         }
       }
     },
+    "/api/Turno/mis-turnos": {
+      "get": {
+        "tags": [
+          "Turno"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Turno/{id}/asistencia": {
       "put": {
         "tags": [
@@ -910,6 +904,87 @@
             }
           }
         ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Turno/por-semana/{calendarioId}": {
+      "get": {
+        "tags": [
+          "Turno"
+        ],
+        "parameters": [
+          {
+            "name": "calendarioId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "fechaInicio",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          {
+            "name": "fechaFin",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Turno/editar/{turnoId}": {
+      "put": {
+        "tags": [
+          "Turno"
+        ],
+        "parameters": [
+          {
+            "name": "turnoId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EditarTurnosDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EditarTurnosDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/EditarTurnosDTO"
+              }
+            }
+          }
+        },
         "responses": {
           "200": {
             "description": "OK"
@@ -1037,24 +1112,6 @@
         },
         "additionalProperties": false
       },
-      "CrearOdontologoDTO": {
-        "type": "object",
-        "properties": {
-          "nombre": {
-            "type": "string",
-            "nullable": true
-          },
-          "email": {
-            "type": "string",
-            "nullable": true
-          },
-          "password": {
-            "type": "string",
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
       "CrearPacienteDTO": {
         "type": "object",
         "properties": {
@@ -1144,6 +1201,24 @@
           "obraSocial": {
             "type": "string",
             "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "EditarTurnosDTO": {
+        "type": "object",
+        "properties": {
+          "idPaciente": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idOdontologo": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idObraSocial": {
+            "type": "integer",
+            "format": "int32"
           }
         },
         "additionalProperties": false

@@ -1,6 +1,22 @@
 [
   {
     "ContainingType": "Agenda.Controllers.AuthController",
+    "Method": "CrearOdontologo",
+    "RelativePath": "api/Auth/crear-odontologo",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Agenda.Entidades.DTOs.RegistroDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Agenda.Controllers.AuthController",
     "Method": "Login",
     "RelativePath": "api/Auth/login",
     "HttpMethod": "POST",
@@ -13,16 +29,6 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Agenda.Controllers.AuthController",
-    "Method": "Ping",
-    "RelativePath": "api/Auth/ping",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
     "ReturnTypes": []
   },
   {
@@ -264,7 +270,7 @@
     "Parameters": [
       {
         "Name": "dto",
-        "Type": "Agenda.Entidades.DTOs.DTO.OdontologosDTO.CrearOdontologoDTO",
+        "Type": "Agenda.Entidades.DTOs.RegistroDto",
         "IsRequired": true
       }
     ],
@@ -404,32 +410,6 @@
   },
   {
     "ContainingType": "Agenda.Controllers.TurnoController",
-    "Method": "ObtenerTurnos",
-    "RelativePath": "api/Turno/{calendarioId}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "calendarioId",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.List\u00601[[Agenda.Entidades.DTOs.DTO.TurnosDTO.TurnoDTO, Agenda, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "Agenda.Controllers.TurnoController",
     "Method": "MarcarAsistencia",
     "RelativePath": "api/Turno/{id}/asistencia",
     "HttpMethod": "PUT",
@@ -499,6 +479,27 @@
   },
   {
     "ContainingType": "Agenda.Controllers.TurnoController",
+    "Method": "EditarTurno",
+    "RelativePath": "api/Turno/editar/{turnoId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "turnoId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "Agenda.Entidades.DTOs.DTO.TurnosDTO.EditarTurnosDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Agenda.Controllers.TurnoController",
     "Method": "Filtrar",
     "RelativePath": "api/Turno/filtrar/{calendarioId}",
     "HttpMethod": "GET",
@@ -541,6 +542,52 @@
     "IsController": true,
     "Order": 0,
     "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Agenda.Controllers.TurnoController",
+    "Method": "ObtenerMisTurnos",
+    "RelativePath": "api/Turno/mis-turnos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Agenda.Controllers.TurnoController",
+    "Method": "ObtenerTurnosDelDia",
+    "RelativePath": "api/Turno/mis-turnos-hoy",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Agenda.Controllers.TurnoController",
+    "Method": "ObtenerTurnosPorSemana",
+    "RelativePath": "api/Turno/por-semana/{calendarioId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "calendarioId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "fechaInicio",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "fechaFin",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      }
+    ],
     "ReturnTypes": []
   },
   {

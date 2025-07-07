@@ -72,7 +72,7 @@ builder.Services.AddCors(options =>
         policy.WithOrigins("http://localhost:4200")
               .AllowAnyHeader()
               .AllowAnyMethod()
-              .AllowCredentials(); // Si us�s cookies o auth headers
+              .AllowCredentials(); 
     });
 });
 
@@ -94,7 +94,6 @@ var app = builder.Build();
 
 
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();

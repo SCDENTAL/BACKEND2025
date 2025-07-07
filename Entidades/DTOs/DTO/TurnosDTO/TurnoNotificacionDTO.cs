@@ -5,8 +5,8 @@
 		
 			public int TurnoId { get; set; }
 			public string NombrePaciente { get; set; }
-			public string TelefonoPaciente { get; set; } // Para WhatsApp
-			public string EmailPaciente { get; set; }    // Para email
+			public string TelefonoPaciente { get; set; } // Para WhatsApp 
+ 			public string EmailPaciente { get; set; }    // Para email
 			public string NombreOdontologo { get; set; }
 			public DateTime FechaHoraInicio { get; set; }
 			public string Estado { get; set; }

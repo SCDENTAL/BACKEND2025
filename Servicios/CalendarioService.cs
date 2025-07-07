@@ -49,7 +49,7 @@ namespace Agenda.Servicios
 
         public async Task<CalendarioDTO> CrearAsync(CrearCalendarioDTO dto, int usuarioId)
         {
-            // Validaciones
+            
             if (dto.HoraInicioTurnos < 0)
                 throw new ArgumentException("La hora de inicio no puede ser negativa.");
 
@@ -74,8 +74,7 @@ namespace Agenda.Servicios
             var yaExiste = await _context.Calendarios.AnyAsync(c => c.IdUsuario == usuarioId);
             if (yaExiste)
                 throw new InvalidOperationException("El usuario ya tiene un calendario.");
-
-            // Crear el calendario
+            
             var calendario = new Calendario
             {
                 Nombre = dto.Nombre,
@@ -89,8 +88,7 @@ namespace Agenda.Servicios
 
             _context.Calendarios.Add(calendario);
             await _context.SaveChangesAsync();
-
-            // Cargar fechas
+            
             var fechas = new List<DateTime>();
             var fechaActual = calendario.FechaInicio;
 
@@ -102,7 +100,6 @@ namespace Agenda.Servicios
                 fechaActual = fechaActual.AddDays(1);
             }
 
-            // Cargar horarios
             var horarios = new List<TimeSpan>();
             var horaActual = calendario.HoraInicioTurnos;
             while (horaActual < calendario.HoraFinTurnos)
@@ -112,8 +109,7 @@ namespace Agenda.Servicios
             }
 
             calendario.CantidadHorarios = horarios.Count;
-
-            // Crear los turnos (puede ir en un método aparte si preferís separar lógica)
+            
             foreach (var fecha in fechas)
             {
                 foreach (var hora in horarios)
@@ -133,8 +129,7 @@ namespace Agenda.Servicios
             }
 
             await _context.SaveChangesAsync();
-
-            // Devolver el DTO manualmente
+            
             return new CalendarioDTO
             {
                 Id = calendario.Id,
@@ -159,7 +154,8 @@ namespace Agenda.Servicios
             calendario.HoraInicioTurnos = TimeSpan.FromHours(dto.HoraInicioTurnos);
             calendario.HoraFinTurnos = TimeSpan.FromHours(dto.HoraFinTurnos);
             calendario.IntervaloTurnos = TimeSpan.FromMinutes(dto.IntervaloTurnos);
-            calendario.CantidadHorarios = CalcularCantidadHorarios(TimeSpan.FromHours(dto.HoraInicioTurnos), TimeSpan.FromHours(dto.HoraFinTurnos), TimeSpan.FromMinutes(dto.IntervaloTurnos));
+            calendario.CantidadHorarios = 
+                CalcularCantidadHorarios(TimeSpan.FromHours(dto.HoraInicioTurnos), TimeSpan.FromHours(dto.HoraFinTurnos), TimeSpan.FromMinutes(dto.IntervaloTurnos));
 
             await _context.SaveChangesAsync();
             return true;
@@ -197,7 +193,6 @@ namespace Agenda.Servicios
         {
             return (int)((horaFin - horaInicio).TotalMinutes / intervalo.TotalMinutes);
         }
-
        
     }
 }

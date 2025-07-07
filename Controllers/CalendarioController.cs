@@ -31,13 +31,30 @@ namespace Agenda.API.Controllers
             if (calendario == null) return NotFound();
             return Ok(calendario);
         }
+      
 
         [HttpPost]
         public async Task<ActionResult<CalendarioDTO>> Crear([FromBody] CrearCalendarioDTO dto)
         {
-            var creado = await _service.CrearAsync(dto, ObtenerUsuarioId());
-            return CreatedAtAction(nameof(ObtenerPorId), new { id = creado.Id }, creado);
+            try
+            {
+                var creado = await _service.CrearAsync(dto, ObtenerUsuarioId());
+                return CreatedAtAction(nameof(ObtenerPorId), new { id = creado.Id }, creado);
+            }
+            catch (ArgumentException ex)
+            {
+                return BadRequest(new { error = ex.Message }); 
+            }
+            catch (InvalidOperationException ex)
+            {
+                return BadRequest(new { error = ex.Message });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { error = "Error interno del servidor", detalle = ex.Message });
+            }
         }
+
 
         [HttpPut("{id}")]
         public async Task<IActionResult> Editar(int id, [FromBody] CrearCalendarioDTO dto)

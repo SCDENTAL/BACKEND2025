@@ -20,12 +20,11 @@ namespace Agenda.Base
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            // Usuario -> Odontologos
             modelBuilder.Entity<Usuario>()
-                .HasMany(u => u.Odontologos)
-                .WithOne(o => o.Usuario)
-                .HasForeignKey(o => o.UsuarioId)
-                .OnDelete(DeleteBehavior.Restrict);
+       .HasMany(u => u.Odontologos)
+       .WithOne(o => o.Administrador)
+       .HasForeignKey(o => o.AdministradorId)
+       .OnDelete(DeleteBehavior.Restrict);
 
             // Usuario -> Pacientes
             modelBuilder.Entity<Usuario>()
@@ -48,18 +47,25 @@ namespace Agenda.Base
                 .HasForeignKey(t => t.UsuarioId)
                 .OnDelete(DeleteBehavior.Restrict);
 
-            // Usuario -> Calendarios (NUEVO)
+            // Usuario -> Calendarios
             modelBuilder.Entity<Usuario>()
                 .HasMany(u => u.Calendarios)
                 .WithOne(c => c.Usuario)
                 .HasForeignKey(c => c.IdUsuario)
                 .OnDelete(DeleteBehavior.Restrict);
 
-            // Calendario -> Turnos (NUEVO)
+            // Calendario -> Turnos
             modelBuilder.Entity<Calendario>()
                 .HasMany(c => c.Turnos)
                 .WithOne(t => t.Calendario)
                 .HasForeignKey(t => t.IdCalendario)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            // Odontologo -> Usuario (el usuario propio del odontólogo)
+            modelBuilder.Entity<Odontologo>()
+                .HasOne(o => o.Usuario)
+                .WithMany()
+                .HasForeignKey(o => o.UsuarioId)
                 .OnDelete(DeleteBehavior.Restrict);
 
             // Odontologo -> Turnos
@@ -74,7 +80,7 @@ namespace Agenda.Base
                 .HasMany(p => p.Turnos)
                 .WithOne(t => t.Paciente)
                 .HasForeignKey(t => t.IdPaciente)
-                .IsRequired(false) 
+                .IsRequired(false)
                 .OnDelete(DeleteBehavior.Restrict);
 
             // ObraSocial -> Pacientes
@@ -84,11 +90,11 @@ namespace Agenda.Base
                 .HasForeignKey(p => p.ObraSocialId)
                 .OnDelete(DeleteBehavior.SetNull);
 
-
+            // Roles
             modelBuilder.Entity<Rol>().HasData(
                 new Rol { Id = 1, Nombre = "Administrador" },
                 new Rol { Id = 2, Nombre = "Odontologo" }
-   );
+            );
 
 
         }

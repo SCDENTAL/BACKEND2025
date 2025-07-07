@@ -40,15 +40,17 @@ namespace Agenda.Controllers
             var odontologo = await _service.ObtenerPorIdAsync(id, usuarioId);
             return odontologo == null ? NotFound() : Ok(odontologo);
         }
+
+
         [Authorize(Roles = "Administrador")]
         [HttpPost]
-        public async Task<IActionResult> Post([FromBody] CrearOdontologoDTO dto)
+        public async Task<IActionResult> Post([FromBody] RegistroDto dto)
         {
             try
             {
                 var usuarioId = ObtenerUsuarioId();
-                var creado = await _service.CrearAsync(dto, usuarioId);
-                return CreatedAtAction(nameof(Get), new { id = creado.Id }, creado);
+                var creado = await _service.CrearAync(dto, usuarioId);
+                return CreatedAtAction(nameof(Get), new { id = creado }, creado);
             }
             catch (Exception ex)
             {

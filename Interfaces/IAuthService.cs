@@ -7,5 +7,7 @@ namespace Agenda.Interfaces
     {
         Task<(bool Success, string Message, AuthResponse Data)> Registrar(RegistroDto dto);
         Task<(bool Success, string Message, AuthResponse Data)> Login(LoginDto dto);
+
+        Task<(bool Success, string Message)> CrearOdontologoDesdeAdmin(RegistroDto dto, int usuarioIdAdmin);
     }
 }

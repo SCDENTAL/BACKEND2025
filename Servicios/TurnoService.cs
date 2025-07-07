@@ -1,6 +1,7 @@
 ﻿using Agenda.Base;
 using Agenda.Entidades;
 using Agenda.Entidades.DTOs.DTO.TurnosDTO;
+using Agenda.Exceptions;
 using Agenda.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
@@ -15,6 +16,67 @@ public class TurnoService : ITurnoService
         return await _context.Calendarios
             .FirstOrDefaultAsync(c => c.Id == calendarioId && c.IdUsuario == usuarioId);
     }
+
+    public async Task<IEnumerable<TurnoOdontologoDTO>> ObtenerTurnosDelDiaAsync(int usuarioIdOdontologo)
+    {
+        var hoy = DateTime.Today;
+
+        var odontologo = await _context.Odontologos
+            .FirstOrDefaultAsync(o => o.UsuarioId == usuarioIdOdontologo);
+
+        if (odontologo == null)
+            throw new Exception("Odontólogo no encontrado.");
+
+        return await _context.Turnos
+            .Include(t => t.Paciente)
+            .Include(t => t.ObraSocial)
+            .Where(t => t.OdontologoId == odontologo.Id && t.Fecha == hoy && !t.Disponible)
+            .Select(t => new TurnoOdontologoDTO
+            {
+                Id = t.Id,
+                Fecha = t.Fecha,
+                Horario = t.Horario,
+                NombrePaciente = t.Paciente != null ? t.Paciente.Nombre : "No asignado",
+                NumeroPaciente = t.Paciente != null ? t.Paciente.Telefono : "0",
+                NombreObraSocial = t.ObraSocial != null ? t.ObraSocial.Nombre : "No asignada",
+                Asistio = t.Asistio ?? false // ✅ Asegurate de incluir esto
+            })
+            .ToListAsync();
+    }
+
+
+    public async Task<List<TurnoDTO>> ObtenerTurnosDelOdontologoAsync(int usuarioIdOdontologo)
+    {        
+        var odontologo = await _context.Odontologos
+            .FirstOrDefaultAsync(o => o.UsuarioId == usuarioIdOdontologo);
+
+        if (odontologo == null)
+            return new List<TurnoDTO>();
+
+        var turnos = await _context.Turnos
+            .Include(t => t.Paciente)
+            .Include(t => t.ObraSocial)
+            .Where(t => t.OdontologoId == odontologo.Id)
+            .ToListAsync();
+
+        return turnos.Select(t => new TurnoDTO
+        {
+            Id = t.Id,
+            Fecha = t.Fecha,
+            Horario = t.Horario,
+            Disponible = t.Disponible,
+            Asistio = t.Asistio,
+            IdPaciente = t.IdPaciente,
+            NombrePaciente = t.Paciente?.Nombre,
+            OdontologoId = t.OdontologoId,
+            NombreOdontologo = odontologo.Nombre, 
+            IdObraSocial = t.ObraSocialId,
+            NombreObraSocial = t.ObraSocial?.Nombre
+        }).ToList();
+    }
+
+
+
 
     public async Task<List<TurnoDTO>> ObtenerTurnosAsync(int calendarioId, int usuarioId)
     {
@@ -66,13 +128,14 @@ public class TurnoService : ITurnoService
         };
     }
 
-    public async Task<bool> ReservarTurnoAsync(int turnoId, ReservarTurnoDTO dto, int usuarioId)
+    public async Task<ResultadoOperacion> ReservarTurnoAsync(int turnoId, ReservarTurnoDTO dto, int usuarioId)
     {
         var turno = await _context.Turnos.FirstOrDefaultAsync(t => t.Id == turnoId && t.UsuarioId == usuarioId);
-        if (turno == null || !turno.Disponible) return false;
+        if (turno == null) return new ResultadoOperacion(false, "Turno no encontrado o no pertenece al usuario");
+        if (!turno.Disponible) return new ResultadoOperacion(false, "El turno no está disponible");
 
         if (!await _context.Pacientes.AnyAsync(p => p.Id == dto.IdPaciente && p.UsuarioId == usuarioId))
-            return false;
+            return new ResultadoOperacion(false, "Paciente no encontrado o no pertenece al usuario");
 
         turno.Disponible = false;
         turno.IdPaciente = dto.IdPaciente;
@@ -80,7 +143,28 @@ public class TurnoService : ITurnoService
         turno.ObraSocialId = dto.IdObraSocial;
 
         await _context.SaveChangesAsync();
-        return true;
+        return new ResultadoOperacion(true, string.Empty);
+    }
+
+    public async Task<ResultadoOperacion> EditarTurnoAsync(int turnoId, EditarTurnosDTO dto, int usuarioId)
+    {
+        var turno = await _context.Turnos
+            .Include(t => t.Calendario)
+            .FirstOrDefaultAsync(t => t.Id == turnoId && t.Calendario.IdUsuario == usuarioId);
+
+        if (turno == null)
+            return ResultadoOperacion.Fallo("Turno no encontrado o no te pertenece.");
+
+        if (turno.Disponible)
+            return ResultadoOperacion.Fallo("No se puede editar un turno disponible.");
+
+        turno.IdPaciente = dto.IdPaciente;
+        turno.OdontologoId = dto.IdOdontologo;
+        turno.ObraSocialId = dto.IdObraSocial;
+
+        await _context.SaveChangesAsync();
+
+        return ResultadoOperacion.Exito();
     }
 
     public async Task<bool> CancelarTurnoAsync(int turnoId, int usuarioId)
@@ -97,18 +181,29 @@ public class TurnoService : ITurnoService
         await _context.SaveChangesAsync();
         return true;
     }
-    public async Task<bool> MarcarAsistenciaAsync(int turnoId, bool asistio, int usuarioId)
+    public async Task<bool> MarcarAsistenciaAsync(int turnoId, bool asistio, int usuarioId, string rol)
     {
-        var turno = await _context.Turnos.FirstOrDefaultAsync(t => t.Id == turnoId && t.UsuarioId == usuarioId);
-        if (turno == null || turno.Disponible) 
-            
-            return false; 
+        Turno turno = null;
+
+        if (rol == "Odontologo")
+        {
+            turno = await _context.Turnos
+                .Include(t => t.Odontologo)
+                .FirstOrDefaultAsync(t => t.Id == turnoId && t.Odontologo != null && t.Odontologo.UsuarioId == usuarioId);
+        }
+        else // administrador
+        {
+            turno = await _context.Turnos
+                .FirstOrDefaultAsync(t => t.Id == turnoId && t.UsuarioId == usuarioId);
+        }
+
+        if (turno == null || turno.Disponible)
+            return false;
 
         turno.Asistio = asistio;
         await _context.SaveChangesAsync();
         return true;
     }
-
 
     public async Task CrearTurnosAsync(List<DateTime> fechas, List<TimeSpan> horarios, Calendario calendario)
     {

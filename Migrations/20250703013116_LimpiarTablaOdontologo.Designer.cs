@@ -4,6 +4,7 @@ using Agenda.Base;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Agenda.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250703013116_LimpiarTablaOdontologo")]
+    partial class LimpiarTablaOdontologo
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -92,9 +95,6 @@ namespace Agenda.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int?>("AdministradorId")
-                        .HasColumnType("int");
-
                     b.Property<string>("Nombre")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -103,8 +103,6 @@ namespace Agenda.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("AdministradorId");
 
                     b.HasIndex("UsuarioId");
 
@@ -286,18 +284,11 @@ namespace Agenda.Migrations
 
             modelBuilder.Entity("Agenda.Entidades.Odontologo", b =>
                 {
-                    b.HasOne("Agenda.Entidades.Usuario", "Administrador")
-                        .WithMany("Odontologos")
-                        .HasForeignKey("AdministradorId")
-                        .OnDelete(DeleteBehavior.Restrict);
-
                     b.HasOne("Agenda.Entidades.Usuario", "Usuario")
-                        .WithMany()
+                        .WithMany("Odontologos")
                         .HasForeignKey("UsuarioId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
-
-                    b.Navigation("Administrador");
 
                     b.Navigation("Usuario");
                 });

@@ -10,7 +10,7 @@ namespace Agenda.Controllers
 {
      [ApiController]
     [Route("api/[controller]")]
-    [Authorize(Roles = "Administrador")]
+    
     public class TurnoController : ControllerBase
     {
         private readonly ITurnoService _turnoService;
@@ -24,12 +24,17 @@ namespace Agenda.Controllers
 
         private int ObtenerUsuarioId() => int.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier)!);
 
-        [HttpGet("{calendarioId}")]
-        public async Task<ActionResult<List<TurnoDTO>>> ObtenerTurnos(int calendarioId)
+
+        [Authorize(Roles = "Odontologo")]
+        [HttpGet("mis-turnos-hoy")]
+        public async Task<IActionResult> ObtenerTurnosDelDia()
         {
-            var turnos = await _turnoService.ObtenerTurnosAsync(calendarioId, ObtenerUsuarioId());
+            var usuarioId = ObtenerUsuarioId();
+            var turnos = await _turnoService.ObtenerTurnosDelDiaAsync(usuarioId);
             return Ok(turnos);
         }
+
+
 
         [HttpGet("filtrar/{calendarioId}")]
         public async Task<ActionResult<ResTurnosFiltrados>> Filtrar(int calendarioId, [FromQuery] DateTime fechaInicio, [FromQuery] DateTime fechaFin)
@@ -42,8 +47,11 @@ namespace Agenda.Controllers
         [HttpPost("reservar/{turnoId}")]
         public async Task<IActionResult> Reservar(int turnoId, [FromBody] ReservarTurnoDTO dto)
         {
-            var success = await _turnoService.ReservarTurnoAsync(turnoId, dto, ObtenerUsuarioId());
-            return success ? Ok("Turno reservado.") : BadRequest("No se pudo reservar el turno.");
+            var resultado = await _turnoService.ReservarTurnoAsync(turnoId, dto, ObtenerUsuarioId());
+            if (resultado.Success)
+                return Ok(new { message = "Turno reservado." });
+            else
+                return BadRequest(new { message = resultado.ErrorMessage });
         }
 
         [HttpPost("cancelar/{turnoId}")]
@@ -76,16 +84,42 @@ namespace Agenda.Controllers
         }
 
 
+
+        [Authorize(Roles = "Odontologo")]
+        [HttpGet("mis-turnos")]
+        public async Task<IActionResult> ObtenerMisTurnos()
+        {
+            var userIdStr = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            if (!int.TryParse(userIdStr, out var userId))
+                return Unauthorized();
+
+            try
+            {
+                var turnos = await _turnoService.ObtenerTurnosDelOdontologoAsync(userId);
+                return Ok(turnos);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+
         [Authorize]
         [HttpPut("{id}/asistencia")]
         public async Task<IActionResult> MarcarAsistencia(int id, [FromBody] MarcarAsistenciaDTO dto)
         {
-            var usuarioId = ObtenerUsuarioId(); 
+            var usuarioId = ObtenerUsuarioId();
+            var rol = User.FindFirstValue(ClaimTypes.Role);  
 
-            var result = await _turnoService.MarcarAsistenciaAsync(id, dto.Asistio, usuarioId);
-            if (!result) return BadRequest("No se pudo marcar la asistencia.");
+            var result = await _turnoService.MarcarAsistenciaAsync(id, dto.Asistio, usuarioId, rol);
 
-            return Ok("Asistencia marcada correctamente.");
+            if (!result)
+                return BadRequest("No se pudo marcar la asistencia.");
+
+            return Ok(new { mensaje = "Asistencia registrada correctamente" });
+
+
         }
 
         [Authorize]
@@ -97,8 +131,31 @@ namespace Agenda.Controllers
             var result = await _turnoService.CancelarTurnoAsync(id, usuarioId);
             if (!result) return BadRequest("No se pudo cancelar el turno.");
 
-            return Ok("Turno cancelado correctamente.");
+            return Ok(new { mensaje = "Turno cancelado correctamente." });
         }
+
+        [HttpGet("por-semana/{calendarioId}")]
+        public async Task<IActionResult> ObtenerTurnosPorSemana(int calendarioId, [FromQuery] DateTime fechaInicio, [FromQuery] DateTime fechaFin)
+        {
+            var turnos = await _context.Turnos
+                .Where(t => t.IdCalendario == calendarioId && t.Fecha >= fechaInicio && t.Fecha <= fechaFin)
+                .ToListAsync();
+
+            return Ok(turnos);
+        }
+
+        [HttpPut("editar/{turnoId}")]
+        public async Task<IActionResult> EditarTurno(int turnoId, [FromBody] EditarTurnosDTO dto)
+        {
+            var resultado = await _turnoService.EditarTurnoAsync(turnoId, dto, ObtenerUsuarioId());
+
+            if (!resultado.Success)
+                return BadRequest(resultado.ErrorMessage);
+
+            return Ok(new { mensaje = "Turno editado correctamente." });
+
+        }
+
 
 
         [HttpPost("crear/{calendarioId}")]

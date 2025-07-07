@@ -1,8 +1,9 @@
 ﻿using Agenda.Base;
-using Agenda.Entidades.DTOs.DTO.OdontologosDTO;
 using Agenda.Entidades;
-using Microsoft.EntityFrameworkCore;
+using Agenda.Entidades.DTOs;
+using Agenda.Entidades.DTOs.DTO.OdontologosDTO;
 using Agenda.Interfaces;
+using Microsoft.EntityFrameworkCore;
 
 
 namespace Agenda.Servicios
@@ -16,91 +17,106 @@ namespace Agenda.Servicios
             _context = context;
         }
 
-       
-        public async Task<IEnumerable<VerOdontologoDTO>> ObtenerOdontologosAsync(int usuarioId)
+
+        public async Task<IEnumerable<VerOdontologoDTO>> ObtenerOdontologosAsync(int usuarioIdAdmin)
         {
             return await _context.Odontologos
-                .Where(o => o.UsuarioId == usuarioId)
+                .Include(o => o.Usuario) // 👈 Para poder acceder al Email
+                .Where(o => o.AdministradorId == usuarioIdAdmin) // 👈 ahora filtramos por el admin que los creó
                 .Select(o => new VerOdontologoDTO
                 {
                     Id = o.Id,
                     Nombre = o.Nombre,
-                    Email = o.Email,
-                    Password = o.Password,
+                    Email = o.Usuario.Email,
+                    // PasswordPlaceholder es automático, no necesitas asignarlo
                 }).ToListAsync();
         }
+
+
+
         public async Task<OdontologosDTO> ObtenerPorIdAsync(int id, int usuarioId)
         {
-            var odontologo = await _context.Odontologos.FirstOrDefaultAsync(o => o.Id == id && o.UsuarioId == usuarioId);
+            var odontologo = await _context.Odontologos
+                .Include(o => o.Usuario)
+                .FirstOrDefaultAsync(o => o.Id == id && o.UsuarioId == usuarioId);
+
             if (odontologo == null) return null;
 
             return new OdontologosDTO
             {
                 Id = odontologo.Id,
                 Nombre = odontologo.Nombre,
-                Email = odontologo.Email
+                Email = odontologo.Usuario.Email,                
             };
         }
-        public async Task<OdontologosDTO> CrearAsync(CrearOdontologoDTO dto, int usuarioIdAdmin)
+
+
+        public async Task<int> CrearAync(RegistroDto dto, int usuarioIdAdmin)
         {
             var existe = await _context.Usuarios.AnyAsync(u => u.Email == dto.Email);
-            if (existe) throw new Exception("Ya existe un usuario con ese email");
-            
-            var usuario = new Usuario
+            if (existe)
+                throw new Exception("El email ya está registrado.");
+
+            var usuarioNuevo = new Usuario
             {
                 Nombre = dto.Nombre,
                 Email = dto.Email,
                 Password = BCrypt.Net.BCrypt.HashPassword(dto.Password),
-                RolId = 2 
+                RolId = 2
             };
 
-            _context.Usuarios.Add(usuario);
+            _context.Usuarios.Add(usuarioNuevo);
             await _context.SaveChangesAsync();
-            
+
             var odontologo = new Odontologo
             {
                 Nombre = dto.Nombre,
-                Email = dto.Email,
-                Password = usuario.Password,
-                UsuarioId = usuarioIdAdmin
+                UsuarioId = usuarioNuevo.Id,
+                 AdministradorId = usuarioIdAdmin
             };
 
             _context.Odontologos.Add(odontologo);
             await _context.SaveChangesAsync();
 
-            return new OdontologosDTO
-            {
-                Id = odontologo.Id,
-                Nombre = odontologo.Nombre,
-                Email = odontologo.Email
-            };
+            return odontologo.Id; // 👈 ahora devuelve el ID creado
         }
 
-        public async Task<bool> EditarAsync(int id, EditarOdontologoDTO dto, int usuarioId)
+        public async Task<bool> EditarAsync(int id, EditarOdontologoDTO dto, int usuarioIdAdmin)
         {
-            var odontologo = await _context.Odontologos.FirstOrDefaultAsync(o => o.Id == id && o.UsuarioId == usuarioId);
-            if (odontologo == null) return false;
+            var odontologo = await _context.Odontologos
+                .Include(o => o.Usuario)
+                .FirstOrDefaultAsync(o => o.Id == id && o.AdministradorId == usuarioIdAdmin); // 👈 cambio clave
+
+            if (odontologo == null)
+                return false;
 
             odontologo.Nombre = dto.Nombre;
-            odontologo.Email = dto.Email;
-            odontologo.Password = BCrypt.Net.BCrypt.HashPassword(dto.Password);
+
+            if (!string.IsNullOrWhiteSpace(dto.Email))
+                odontologo.Usuario.Email = dto.Email;
+
+            if (!string.IsNullOrWhiteSpace(dto.Password))
+                odontologo.Usuario.Password = BCrypt.Net.BCrypt.HashPassword(dto.Password);
 
             await _context.SaveChangesAsync();
             return true;
         }
 
-        public async Task<bool> EliminarAsync(int id, int usuarioId)
+        public async Task<bool> EliminarAsync(int id, int usuarioIdAdmin)
         {
-            var odontologo = await _context.Odontologos.FirstOrDefaultAsync(o => o.Id == id && o.UsuarioId == usuarioId);
-            if (odontologo == null) return false;
+            var odontologo = await _context.Odontologos
+                .FirstOrDefaultAsync(o => o.Id == id && o.AdministradorId == usuarioIdAdmin); // 👈 cambio clave
+
+            if (odontologo == null)
+                return false;
 
             _context.Odontologos.Remove(odontologo);
             await _context.SaveChangesAsync();
             return true;
         }
 
-     
 
-       
+
+
     }
 }

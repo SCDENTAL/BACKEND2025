@@ -1,9 +1,9 @@
-﻿//namespace Agenda.Exception
-//{
-//    public class MensajePersonalizadoException : Exception
-//    {
-//        public MensajePersonalizadoException(string? message) : base(message)
-//        {
-//        }
-//    }
-//}
+﻿namespace Agenda.Exceptions
+{
+    public class MensajePersonalizadoException : Exception
+    {
+        public MensajePersonalizadoException(string? message) : base(message)
+        {
+        }
+    }
+}

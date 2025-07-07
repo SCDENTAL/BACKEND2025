@@ -47,6 +47,42 @@ namespace Agenda.Servicios
             return await _token.GenerarToken(usuario);
         }
 
+        public async Task<(bool Success, string Message)> CrearOdontologoDesdeAdmin(RegistroDto dto, int usuarioIdAdmin)
+        {
+            // Validar duplicado
+            var existe = await _context.Usuarios.AnyAsync(u => u.Email == dto.Email);
+            if (existe)
+                return (false, "El email ya está registrado.");
+
+            // Crear el nuevo usuario odontólogo
+            var usuarioNuevo = new Usuario
+            {
+                Nombre = dto.Nombre,
+                Email = dto.Email,
+                Password = BCrypt.Net.BCrypt.HashPassword(dto.Password),
+                RolId = 2
+            };
+
+            _context.Usuarios.Add(usuarioNuevo);
+            await _context.SaveChangesAsync();
+
+            // ✅ Crear el odontólogo vinculado al ADMIN que lo creó
+            var odontologo = new Odontologo
+            {
+                Nombre = dto.Nombre,
+                UsuarioId = usuarioIdAdmin // ✅ correcto: es el ID del admin logueado
+            };
+
+            _context.Odontologos.Add(odontologo);
+            await _context.SaveChangesAsync();
+
+            return (true, "Odontólogo creado correctamente.");
+        }
+
+
+
+
+
         public async Task<(bool Success, string Message, AuthResponse Data)> Login(LoginDto dto)
         {         
             var usuario = await _context.Usuarios.Include(u => u.Rol).FirstOrDefaultAsync(u => u.Email == dto.Email);

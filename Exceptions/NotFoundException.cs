@@ -1,9 +1,9 @@
-﻿//namespace Agenda.Exception
-//{
-//    public class NotFoundException : Exception
-//    {
-//        public NotFoundException(string? message = null) : base(message)
-//        {
-//        }
-//    }
-//}
+﻿namespace Agenda.Exceptions
+{
+    public class NotFoundException : Exception
+    {
+        public NotFoundException(string? message = null) : base(message)
+        {
+        }
+    }
+}

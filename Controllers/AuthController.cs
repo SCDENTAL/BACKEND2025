@@ -1,6 +1,7 @@
 ﻿using Agenda.Entidades.DTOs;
 using Agenda.Interfaces;
 using Agenda.Servicios;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity.Data;
 using Microsoft.AspNetCore.Mvc;
@@ -38,10 +39,22 @@ namespace Agenda.Controllers
             return Ok(result.Data);
         }
 
-		[HttpGet("ping")]
-		public IActionResult Ping()
-		{
-			return Ok("pong");
-		}
-	}
+
+
+        [Authorize(Roles = "Administrador")]
+        [HttpPost("crear-odontologo")]
+        public async Task<IActionResult> CrearOdontologo([FromBody] RegistroDto dto)
+        {
+            // ✅ Obtener el ID del admin logueado
+            int usuarioIdAdmin = int.Parse(User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier)?.Value ?? "0");
+
+            var resultado = await _authService.CrearOdontologoDesdeAdmin(dto, usuarioIdAdmin);
+            if (!resultado.Success)
+                return BadRequest(new { mensaje = resultado.Message });
+
+            return Ok(new { mensaje = resultado.Message });
+        }
+
+
+    }
 }

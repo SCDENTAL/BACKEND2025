@@ -30,11 +30,7 @@ public class Turno
     [Required]
     public int IdCalendario { get; set; }
     public Calendario Calendario { get; set; }
-
-  
-    
-
-    // Relaciones con entidades propias
+          
     public int? IdPaciente { get; set; }
     public Paciente? Paciente { get; set; }
 
