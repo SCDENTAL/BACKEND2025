@@ -866,17 +866,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/MarcarAsistenciaDTO"
+                "$ref": "#/components/schemas/AsistenciaDTO"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/MarcarAsistenciaDTO"
+                "$ref": "#/components/schemas/AsistenciaDTO"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/MarcarAsistenciaDTO"
+                "$ref": "#/components/schemas/AsistenciaDTO"
               }
             }
           }
@@ -1018,6 +1018,18 @@
   },
   "components": {
     "schemas": {
+      "AsistenciaDTO": {
+        "required": [
+          "asistio"
+        ],
+        "type": "object",
+        "properties": {
+          "asistio": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
       "CalendarioDTO": {
         "required": [
           "fechaFin",
@@ -1196,10 +1208,7 @@
           },
           "obraSocialId": {
             "type": "integer",
-            "format": "int32"
-          },
-          "obraSocial": {
-            "type": "string",
+            "format": "int32",
             "nullable": true
           }
         },
@@ -1246,15 +1255,6 @@
           "password": {
             "type": "string",
             "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "MarcarAsistenciaDTO": {
-        "type": "object",
-        "properties": {
-          "asistio": {
-            "type": "boolean"
           }
         },
         "additionalProperties": false

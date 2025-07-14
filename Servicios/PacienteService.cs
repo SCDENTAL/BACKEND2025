@@ -11,7 +11,10 @@ namespace Agenda.Servicios
 	{
 		private readonly AppDbContext _context;
 
-		public PacienteService(AppDbContext context) => _context = context;
+		public PacienteService(AppDbContext context) { 
+			_context = context; 
+		
+		}
 
 		public async Task<List<PacienteDTO>> ObtenerTodosAsync(int usuarioId) =>
 			await _context.Pacientes
@@ -75,28 +78,30 @@ namespace Agenda.Servicios
 			};
 		}
 
-		public async Task<bool> EditarAsync(int id, EditarPacientesDTO dto, int usuarioId)
-		{
-			var paciente = await _context.Pacientes
-				.FirstOrDefaultAsync(p => p.Id == id && p.UsuarioId == usuarioId);
+        public async Task<bool> EditarAsync(int id, EditarPacientesDTO dto, int usuarioId)
+        {
+            var paciente = await _context.Pacientes
+                .FirstOrDefaultAsync(p => p.Id == id && p.UsuarioId == usuarioId);
 
-			if (paciente == null) return false;
+            if (paciente == null) return false;
 
-			paciente.Nombre = dto.Nombre;
-			paciente.Apellido = dto.Apellido;
-			paciente.Dni = dto.Dni;
-			paciente.Telefono = dto.Telefono;
-			paciente.Email = dto.Email;
+            paciente.Nombre = dto.Nombre;
+            paciente.Apellido = dto.Apellido;
+            paciente.Dni = dto.Dni;
+            paciente.Telefono = dto.Telefono;
+            paciente.Email = dto.Email;
 
-			var obra = await _context.ObrasSociales.FirstOrDefaultAsync(x => x.Nombre == dto.ObraSocial && x.UsuarioId == usuarioId);
-			if (obra != null)
-				paciente.ObraSocialId = obra.Id;
+            // Asegurarse que la obra social exista (opcional)
+            var obraSocialExiste = await _context.ObrasSociales
+                .AnyAsync(o => o.Id == dto.ObraSocialId && o.UsuarioId == usuarioId);
 
-			await _context.SaveChangesAsync();
-			return true;
-		}
+            paciente.ObraSocialId = obraSocialExiste ? dto.ObraSocialId : null;
 
-		public async Task<bool> EliminarAsync(int id, int usuarioId)
+            await _context.SaveChangesAsync();
+            return true;
+        }
+
+        public async Task<bool> EliminarAsync(int id, int usuarioId)
 		{
 			var paciente = await _context.Pacientes.FirstOrDefaultAsync(p => p.Id == id && p.UsuarioId == usuarioId);
 			if (paciente == null) return false;

@@ -3,220 +3,76 @@
   "WorkspaceRootPath": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\controllers\\turnocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:controllers\\turnocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\entidades\\dtos\\dto\\turnosdto\\turnoodontologodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:entidades\\dtos\\dto\\turnosdto\\turnoodontologodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\servicios\\turnoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:servicios\\turnoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\servicios\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:servicios\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\controllers\\odontologocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:controllers\\odontologocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\interfaces\\iturnoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:interfaces\\iturnoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\servicios\\odontologoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:servicios\\odontologoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\entidades\\turno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:entidades\\turno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\entidades\\odontologo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:entidades\\odontologo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\entidades\\dtos\\dto\\turnosdto\\turnodetalledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:entidades\\dtos\\dto\\turnosdto\\turnodetalledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\servicios\\pacienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:servicios\\pacienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\interfaces\\iodontologoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:interfaces\\iodontologoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\entidades\\dtos\\dto\\odontologosdto\\verodontologodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:entidades\\dtos\\dto\\odontologosdto\\verodontologodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Migrations\\20250707060200_AgregarIdAdministradorOdontologo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20250707060200_AgregarIdAdministradorOdontologo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Migrations\\20250707060046_AgregarIdAdministradorOdontologo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20250707060046_AgregarIdAdministradorOdontologo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\entidades\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:entidades\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\entidades\\estadoturno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:entidades\\estadoturno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\base\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:base\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\entidades\\dtos\\registrodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:entidades\\dtos\\registrodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\entidades\\dtos\\dto\\odontologosdto\\editarodontologodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:entidades\\dtos\\dto\\odontologosdto\\editarodontologodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\exceptions\\notfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:exceptions\\notfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\exceptions\\resultadooperacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:exceptions\\resultadooperacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\servicios\\obrasocialservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:servicios\\obrasocialservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\entidades\\paciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:entidades\\paciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\servicios\\odontologoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:servicios\\odontologoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\exceptions\\mensajepersonlaizadoexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:exceptions\\mensajepersonlaizadoexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\entidades\\dtos\\obrasocial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:entidades\\dtos\\obrasocial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\base\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:base\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\middleware\\exceptionmiddlewareextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:middleware\\exceptionmiddlewareextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\exceptions\\mensajepersonalizadoexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:exceptions\\mensajepersonalizadoexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\exceptions\\notfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:exceptions\\notfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\exceptions\\badrequestexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:exceptions\\badrequestexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\servicios\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:servicios\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\entidades\\calendario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:entidades\\calendario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\entidades\\rol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:entidades\\rol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Migrations\\20250703020822_CorrectOdontologosUsuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20250703020822_CorrectOdontologosUsuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\entidades\\dtos\\dto\\turnosdto\\turnodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:entidades\\dtos\\dto\\turnosdto\\turnodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\servicios\\calendarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:servicios\\calendarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\controllers\\obrassocialescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:controllers\\obrassocialescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\exceptions\\resultadooperacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:exceptions\\resultadooperacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\controllers\\ipacientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:controllers\\ipacientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\controllers\\calendariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:controllers\\calendariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\entidades\\dtos\\dto\\pacientesdto\\editarpacientesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:entidades\\dtos\\dto\\pacientesdto\\editarpacientesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\entidades\\dtos\\dto\\turnosdto\\editarturnosdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:entidades\\dtos\\dto\\turnosdto\\editarturnosdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\servicios\\pacienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:servicios\\pacienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\entidades\\dtos\\dto\\turnosdto\\marcarasistenciadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:entidades\\dtos\\dto\\turnosdto\\marcarasistenciadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\controllers\\turnocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:controllers\\turnocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\entidades\\dtos\\dto\\turnosdto\\reservarturnodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:entidades\\dtos\\dto\\turnosdto\\reservarturnodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\servicios\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:servicios\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\entidades\\dtos\\dto\\turnosdto\\resturnosfiltrados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:entidades\\dtos\\dto\\turnosdto\\resturnosfiltrados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\servicios\\turnoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:servicios\\turnoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\entidades\\dtos\\dto\\turnosdto\\asistenciadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:entidades\\dtos\\dto\\turnosdto\\asistenciadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\entidades\\dtos\\dto\\turnosdto\\crearturnosdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:entidades\\dtos\\dto\\turnosdto\\crearturnosdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\entidades\\dtos\\dto\\calendariodto\\crearcalendariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:entidades\\dtos\\dto\\calendariodto\\crearcalendariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\entidades\\dtos\\dto\\turnosdto\\turnonotificaciondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:entidades\\dtos\\dto\\turnosdto\\turnonotificaciondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\interfaces\\ipasswordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:interfaces\\ipasswordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\interfaces\\icalendarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:interfaces\\icalendarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\migrations\\20250424041847_fixdni.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:migrations\\20250424041847_fixdni.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\entidades\\dtos\\dto\\calendariodto\\calendariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:entidades\\dtos\\dto\\calendariodto\\calendariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\migrations\\20250607043657_nulleableelturno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:migrations\\20250607043657_nulleableelturno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\migrations\\20250609073833_fixturnososduplicada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:migrations\\20250609073833_fixturnososduplicada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\migrations\\20250703013116_limpiartablaodontologo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:migrations\\20250703013116_limpiartablaodontologo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -230,326 +86,94 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "Paciente.cs",
-              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Entidades\\Paciente.cs",
-              "RelativeDocumentMoniker": "Entidades\\Paciente.cs",
-              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Entidades\\Paciente.cs",
-              "RelativeToolTip": "Entidades\\Paciente.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAsAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "ObraSocial.cs",
+              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Entidades\\DTOs\\ObraSocial.cs",
+              "RelativeDocumentMoniker": "Entidades\\DTOs\\ObraSocial.cs",
+              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Entidades\\DTOs\\ObraSocial.cs",
+              "RelativeToolTip": "Entidades\\DTOs\\ObraSocial.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-03T04:43:18.864Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "TurnoService.cs",
-              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Servicios\\TurnoService.cs",
-              "RelativeDocumentMoniker": "Servicios\\TurnoService.cs",
-              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Servicios\\TurnoService.cs",
-              "RelativeToolTip": "Servicios\\TurnoService.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAwwCEAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T04:11:07.052Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "TurnoController.cs",
-              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Controllers\\TurnoController.cs",
-              "RelativeDocumentMoniker": "Controllers\\TurnoController.cs",
-              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Controllers\\TurnoController.cs",
-              "RelativeToolTip": "Controllers\\TurnoController.cs",
-              "ViewState": "AgIAAGEAAAAAAAAAAAAowGoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T06:57:13.924Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "PacienteService.cs",
-              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Servicios\\PacienteService.cs",
-              "RelativeDocumentMoniker": "Servicios\\PacienteService.cs",
-              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Servicios\\PacienteService.cs",
-              "RelativeToolTip": "Servicios\\PacienteService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-03T01:46:19.512Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "OdontologoService.cs",
-              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Servicios\\OdontologoService.cs",
-              "RelativeDocumentMoniker": "Servicios\\OdontologoService.cs",
-              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Servicios\\OdontologoService.cs",
-              "RelativeToolTip": "Servicios\\OdontologoService.cs",
-              "ViewState": "AgIAAD0AAAAAAAAAAAAwwHIAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-03T01:30:01.675Z",
+              "WhenOpened": "2025-07-13T12:45:34.233Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "ITurnoService.cs",
-              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Interfaces\\ITurnoService.cs",
-              "RelativeDocumentMoniker": "Interfaces\\ITurnoService.cs",
-              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Interfaces\\ITurnoService.cs",
-              "RelativeToolTip": "Interfaces\\ITurnoService.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAWwBsAAABfAAAAAAAAAA==",
+              "Title": "ExceptionMiddlewareExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Middleware\\ExceptionMiddlewareExtensions.cs",
+              "RelativeDocumentMoniker": "Middleware\\ExceptionMiddlewareExtensions.cs",
+              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Middleware\\ExceptionMiddlewareExtensions.cs",
+              "RelativeToolTip": "Middleware\\ExceptionMiddlewareExtensions.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAgwB4AAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T05:11:42.85Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-11T11:22:00.565Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "TurnoDetalleDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Entidades\\DTOs\\DTO\\TurnosDTO\\TurnoDetalleDTO.cs",
-              "RelativeDocumentMoniker": "Entidades\\DTOs\\DTO\\TurnosDTO\\TurnoDetalleDTO.cs",
-              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Entidades\\DTOs\\DTO\\TurnosDTO\\TurnoDetalleDTO.cs",
-              "RelativeToolTip": "Entidades\\DTOs\\DTO\\TurnosDTO\\TurnoDetalleDTO.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAiwBkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-09T05:52:25.454Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Odontologo.cs",
-              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Entidades\\Odontologo.cs",
-              "RelativeDocumentMoniker": "Entidades\\Odontologo.cs",
-              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Entidades\\Odontologo.cs",
-              "RelativeToolTip": "Entidades\\Odontologo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAcAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-02T05:52:06.041Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "OdontologoController.cs",
-              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Controllers\\OdontologoController.cs",
-              "RelativeDocumentMoniker": "Controllers\\OdontologoController.cs",
-              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Controllers\\OdontologoController.cs",
-              "RelativeToolTip": "Controllers\\OdontologoController.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAIwD8AAABYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T06:57:32.643Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Turno.cs",
-              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Entidades\\Turno.cs",
-              "RelativeDocumentMoniker": "Entidades\\Turno.cs",
-              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Entidades\\Turno.cs",
-              "RelativeToolTip": "Entidades\\Turno.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T04:10:01.188Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TurnoOdontologoDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Entidades\\DTOs\\DTO\\TurnosDTO\\TurnoOdontologoDTO.cs",
-              "RelativeDocumentMoniker": "Entidades\\DTOs\\DTO\\TurnosDTO\\TurnoOdontologoDTO.cs",
-              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Entidades\\DTOs\\DTO\\TurnosDTO\\TurnoOdontologoDTO.cs",
-              "RelativeToolTip": "Entidades\\DTOs\\DTO\\TurnosDTO\\TurnoOdontologoDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-07T06:30:09.073Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "VerOdontologoDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Entidades\\DTOs\\DTO\\OdontologosDTO\\VerOdontologoDTO.cs",
-              "RelativeDocumentMoniker": "Entidades\\DTOs\\DTO\\OdontologosDTO\\VerOdontologoDTO.cs",
-              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Entidades\\DTOs\\DTO\\OdontologosDTO\\VerOdontologoDTO.cs",
-              "RelativeToolTip": "Entidades\\DTOs\\DTO\\OdontologosDTO\\VerOdontologoDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-03T02:05:44.015Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Usuario.cs",
-              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Entidades\\Usuario.cs",
-              "RelativeDocumentMoniker": "Entidades\\Usuario.cs",
-              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Entidades\\Usuario.cs",
-              "RelativeToolTip": "Entidades\\Usuario.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-09T07:33:26.667Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "IOdontologoService.cs",
-              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Interfaces\\IOdontologoService.cs",
-              "RelativeDocumentMoniker": "Interfaces\\IOdontologoService.cs",
-              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Interfaces\\IOdontologoService.cs",
-              "RelativeToolTip": "Interfaces\\IOdontologoService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-03T23:14:30.298Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "20250707060046_AgregarIdAdministradorOdontologo.cs",
-              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Migrations\\20250707060046_AgregarIdAdministradorOdontologo.cs",
-              "RelativeDocumentMoniker": "Migrations\\20250707060046_AgregarIdAdministradorOdontologo.cs",
-              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Migrations\\20250707060046_AgregarIdAdministradorOdontologo.cs",
-              "RelativeToolTip": "Migrations\\20250707060046_AgregarIdAdministradorOdontologo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-07T06:00:46.395Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "20250707060200_AgregarIdAdministradorOdontologo.cs",
-              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Migrations\\20250707060200_AgregarIdAdministradorOdontologo.cs",
-              "RelativeDocumentMoniker": "Migrations\\20250707060200_AgregarIdAdministradorOdontologo.cs",
-              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Migrations\\20250707060200_AgregarIdAdministradorOdontologo.cs",
-              "RelativeToolTip": "Migrations\\20250707060200_AgregarIdAdministradorOdontologo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-07T06:02:00.517Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "NotFoundException.cs",
-              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Exceptions\\NotFoundException.cs",
-              "RelativeDocumentMoniker": "Exceptions\\NotFoundException.cs",
-              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Exceptions\\NotFoundException.cs",
-              "RelativeToolTip": "Exceptions\\NotFoundException.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAA1wAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T04:49:53.795Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "RegistroDto.cs",
-              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Entidades\\DTOs\\RegistroDto.cs",
-              "RelativeDocumentMoniker": "Entidades\\DTOs\\RegistroDto.cs",
-              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Entidades\\DTOs\\RegistroDto.cs",
-              "RelativeToolTip": "Entidades\\DTOs\\RegistroDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-03T01:25:54.18Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAGsAAAAAAAAAAAAowHkAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T03:56:57.543Z",
+              "WhenOpened": "2025-07-11T11:21:09.653Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Base\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "Base\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Base\\AppDbContext.cs",
-              "RelativeToolTip": "Base\\AppDbContext.cs",
-              "ViewState": "AgIAAFQAAAAAAAAAAAAswGYAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "OdontologoService.cs",
+              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Servicios\\OdontologoService.cs",
+              "RelativeDocumentMoniker": "Servicios\\OdontologoService.cs",
+              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Servicios\\OdontologoService.cs",
+              "RelativeToolTip": "Servicios\\OdontologoService.cs",
+              "ViewState": "AgIAAF4AAAAAAAAAAAAAwG4AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T04:33:57.639Z",
+              "WhenOpened": "2025-07-11T10:52:41.455Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "EstadoTurno.cs",
-              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Entidades\\EstadoTurno.cs",
-              "RelativeDocumentMoniker": "Entidades\\EstadoTurno.cs",
-              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Entidades\\EstadoTurno.cs",
-              "RelativeToolTip": "Entidades\\EstadoTurno.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "NotFoundException.cs",
+              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Exceptions\\NotFoundException.cs",
+              "RelativeDocumentMoniker": "Exceptions\\NotFoundException.cs",
+              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Exceptions\\NotFoundException.cs",
+              "RelativeToolTip": "Exceptions\\NotFoundException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-03T04:42:48.334Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-11T10:32:34.726Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "ObraSocialService.cs",
-              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Servicios\\ObraSocialService.cs",
-              "RelativeDocumentMoniker": "Servicios\\ObraSocialService.cs",
-              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Servicios\\ObraSocialService.cs",
-              "RelativeToolTip": "Servicios\\ObraSocialService.cs",
-              "ViewState": "AgIAADkAAAAAAAAAAAAAADYAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-09T06:06:59.664Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 9,
               "Title": "ResultadoOperacion.cs",
               "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Exceptions\\ResultadoOperacion.cs",
               "RelativeDocumentMoniker": "Exceptions\\ResultadoOperacion.cs",
               "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Exceptions\\ResultadoOperacion.cs",
               "RelativeToolTip": "Exceptions\\ResultadoOperacion.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAowA0AAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-26T08:58:57.859Z"
+              "WhenOpened": "2025-07-11T10:32:33.88Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "EditarOdontologoDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Entidades\\DTOs\\DTO\\OdontologosDTO\\EditarOdontologoDTO.cs",
-              "RelativeDocumentMoniker": "Entidades\\DTOs\\DTO\\OdontologosDTO\\EditarOdontologoDTO.cs",
-              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Entidades\\DTOs\\DTO\\OdontologosDTO\\EditarOdontologoDTO.cs",
-              "RelativeToolTip": "Entidades\\DTOs\\DTO\\OdontologosDTO\\EditarOdontologoDTO.cs",
+              "DocumentIndex": 6,
+              "Title": "MensajePersonalizadoException.cs",
+              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Exceptions\\MensajePersonalizadoException.cs",
+              "RelativeDocumentMoniker": "Exceptions\\MensajePersonalizadoException.cs",
+              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Exceptions\\MensajePersonalizadoException.cs",
+              "RelativeToolTip": "Exceptions\\MensajePersonalizadoException.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T19:46:10.784Z"
+              "WhenOpened": "2025-07-11T10:31:58.565Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "MensajePersonlaizadoException.cs",
-              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Exceptions\\MensajePersonlaizadoException.cs",
-              "RelativeDocumentMoniker": "Exceptions\\MensajePersonlaizadoException.cs",
-              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Exceptions\\MensajePersonlaizadoException.cs",
-              "RelativeToolTip": "Exceptions\\MensajePersonlaizadoException.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T04:50:15.253Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 8,
               "Title": "BadRequestException.cs",
               "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Exceptions\\BadRequestException.cs",
               "RelativeDocumentMoniker": "Exceptions\\BadRequestException.cs",
@@ -557,344 +181,129 @@
               "RelativeToolTip": "Exceptions\\BadRequestException.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T03:42:58.048Z"
+              "WhenOpened": "2025-07-11T10:31:57.745Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "Calendario.cs",
-              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Entidades\\Calendario.cs",
-              "RelativeDocumentMoniker": "Entidades\\Calendario.cs",
-              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Entidades\\Calendario.cs",
-              "RelativeToolTip": "Entidades\\Calendario.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAgwBUAAAA2AAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "ObraSocialService.cs",
+              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Servicios\\ObraSocialService.cs",
+              "RelativeDocumentMoniker": "Servicios\\ObraSocialService.cs",
+              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Servicios\\ObraSocialService.cs",
+              "RelativeToolTip": "Servicios\\ObraSocialService.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAAwE0AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T03:41:24.198Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "AuthService.cs",
-              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Servicios\\AuthService.cs",
-              "RelativeDocumentMoniker": "Servicios\\AuthService.cs",
-              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Servicios\\AuthService.cs",
-              "RelativeToolTip": "Servicios\\AuthService.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAowDwAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T04:53:41.722Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "20250703020822_CorrectOdontologosUsuarios.cs",
-              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Migrations\\20250703020822_CorrectOdontologosUsuarios.cs",
-              "RelativeDocumentMoniker": "Migrations\\20250703020822_CorrectOdontologosUsuarios.cs",
-              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Migrations\\20250703020822_CorrectOdontologosUsuarios.cs",
-              "RelativeToolTip": "Migrations\\20250703020822_CorrectOdontologosUsuarios.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAgwB8AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-03T02:08:22.275Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "Rol.cs",
-              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Entidades\\Rol.cs",
-              "RelativeDocumentMoniker": "Entidades\\Rol.cs",
-              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Entidades\\Rol.cs",
-              "RelativeToolTip": "Entidades\\Rol.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-03T04:43:16.828Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "Controllers\\AuthController.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAYwDUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-03T01:26:38.725Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "IAuthService.cs",
-              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Interfaces\\IAuthService.cs",
-              "RelativeDocumentMoniker": "Interfaces\\IAuthService.cs",
-              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Interfaces\\IAuthService.cs",
-              "RelativeToolTip": "Interfaces\\IAuthService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-03T01:26:57.301Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "TurnoDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Entidades\\DTOs\\DTO\\TurnosDTO\\TurnoDTO.cs",
-              "RelativeDocumentMoniker": "Entidades\\DTOs\\DTO\\TurnosDTO\\TurnoDTO.cs",
-              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Entidades\\DTOs\\DTO\\TurnosDTO\\TurnoDTO.cs",
-              "RelativeToolTip": "Entidades\\DTOs\\DTO\\TurnosDTO\\TurnoDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-09T05:52:26.017Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 53,
-              "Title": "20250703013116_LimpiarTablaOdontologo.cs",
-              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Migrations\\20250703013116_LimpiarTablaOdontologo.cs",
-              "RelativeDocumentMoniker": "Migrations\\20250703013116_LimpiarTablaOdontologo.cs",
-              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Migrations\\20250703013116_LimpiarTablaOdontologo.cs",
-              "RelativeToolTip": "Migrations\\20250703013116_LimpiarTablaOdontologo.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAA1wAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-03T01:31:17.385Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "CalendarioService.cs",
-              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Servicios\\CalendarioService.cs",
-              "RelativeDocumentMoniker": "Servicios\\CalendarioService.cs",
-              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Servicios\\CalendarioService.cs",
-              "RelativeToolTip": "Servicios\\CalendarioService.cs",
-              "ViewState": "AgIAALQAAAAAAAAAAAAcwMUAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T03:42:18.359Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "TokenService.cs",
-              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Servicios\\TokenService.cs",
-              "RelativeDocumentMoniker": "Servicios\\TokenService.cs",
-              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Servicios\\TokenService.cs",
-              "RelativeToolTip": "Servicios\\TokenService.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAAwCcAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-26T06:37:59.718Z",
+              "WhenOpened": "2025-07-11T10:30:44.472Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "ObrasSocialesController.cs",
-              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Controllers\\ObrasSocialesController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ObrasSocialesController.cs",
-              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Controllers\\ObrasSocialesController.cs",
-              "RelativeToolTip": "Controllers\\ObrasSocialesController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAfAAAAAAAAAA==",
+              "DocumentIndex": 11,
+              "Title": "EditarPacientesDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Entidades\\DTOs\\DTO\\PacientesDTO\\EditarPacientesDTO.cs",
+              "RelativeDocumentMoniker": "Entidades\\DTOs\\DTO\\PacientesDTO\\EditarPacientesDTO.cs",
+              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Entidades\\DTOs\\DTO\\PacientesDTO\\EditarPacientesDTO.cs",
+              "RelativeToolTip": "Entidades\\DTOs\\DTO\\PacientesDTO\\EditarPacientesDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T06:57:19.954Z"
+              "WhenOpened": "2025-07-08T18:44:25.861Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 10,
               "Title": "IPacientesController.cs",
               "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Controllers\\IPacientesController.cs",
               "RelativeDocumentMoniker": "Controllers\\IPacientesController.cs",
               "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Controllers\\IPacientesController.cs",
               "RelativeToolTip": "Controllers\\IPacientesController.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAIwDkAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T06:55:01.87Z"
+              "WhenOpened": "2025-07-08T18:44:19.374Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "MarcarAsistenciaDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Entidades\\DTOs\\DTO\\TurnosDTO\\MarcarAsistenciaDTO.cs",
-              "RelativeDocumentMoniker": "Entidades\\DTOs\\DTO\\TurnosDTO\\MarcarAsistenciaDTO.cs",
-              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Entidades\\DTOs\\DTO\\TurnosDTO\\MarcarAsistenciaDTO.cs",
-              "RelativeToolTip": "Entidades\\DTOs\\DTO\\TurnosDTO\\MarcarAsistenciaDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 12,
+              "Title": "PacienteService.cs",
+              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Servicios\\PacienteService.cs",
+              "RelativeDocumentMoniker": "Servicios\\PacienteService.cs",
+              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Servicios\\PacienteService.cs",
+              "RelativeToolTip": "Servicios\\PacienteService.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAowF0AAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-09T09:00:37.688Z"
+              "WhenOpened": "2025-07-08T18:13:50.018Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "CalendarioController.cs",
-              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Controllers\\CalendarioController.cs",
-              "RelativeDocumentMoniker": "Controllers\\CalendarioController.cs",
-              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Controllers\\CalendarioController.cs",
-              "RelativeToolTip": "Controllers\\CalendarioController.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAmwCUAAAAJAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Base\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Base\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Base\\AppDbContext.cs",
+              "RelativeToolTip": "Base\\AppDbContext.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAAwGQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T06:54:36.656Z"
+              "WhenOpened": "2025-07-08T06:49:21.909Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "ReservarTurnoDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Entidades\\DTOs\\DTO\\TurnosDTO\\ReservarTurnoDTO.cs",
-              "RelativeDocumentMoniker": "Entidades\\DTOs\\DTO\\TurnosDTO\\ReservarTurnoDTO.cs",
-              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Entidades\\DTOs\\DTO\\TurnosDTO\\ReservarTurnoDTO.cs",
-              "RelativeToolTip": "Entidades\\DTOs\\DTO\\TurnosDTO\\ReservarTurnoDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-09T05:52:38.061Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "ResTurnosFiltrados.cs",
-              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Entidades\\DTOs\\DTO\\TurnosDTO\\ResTurnosFiltrados.cs",
-              "RelativeDocumentMoniker": "Entidades\\DTOs\\DTO\\TurnosDTO\\ResTurnosFiltrados.cs",
-              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Entidades\\DTOs\\DTO\\TurnosDTO\\ResTurnosFiltrados.cs",
-              "RelativeToolTip": "Entidades\\DTOs\\DTO\\TurnosDTO\\ResTurnosFiltrados.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-09T05:53:58.537Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "EditarTurnosDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Entidades\\DTOs\\DTO\\TurnosDTO\\EditarTurnosDTO.cs",
-              "RelativeDocumentMoniker": "Entidades\\DTOs\\DTO\\TurnosDTO\\EditarTurnosDTO.cs",
-              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Entidades\\DTOs\\DTO\\TurnosDTO\\EditarTurnosDTO.cs",
-              "RelativeToolTip": "Entidades\\DTOs\\DTO\\TurnosDTO\\EditarTurnosDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-09T05:52:24.541Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 17,
               "Title": "CrearTurnosDTO.cs",
               "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Entidades\\DTOs\\DTO\\TurnosDTO\\CrearTurnosDTO.cs",
               "RelativeDocumentMoniker": "Entidades\\DTOs\\DTO\\TurnosDTO\\CrearTurnosDTO.cs",
               "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Entidades\\DTOs\\DTO\\TurnosDTO\\CrearTurnosDTO.cs",
               "RelativeToolTip": "Entidades\\DTOs\\DTO\\TurnosDTO\\CrearTurnosDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-09T05:52:23.992Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "CrearCalendarioDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Entidades\\DTOs\\DTO\\CalendarioDTO\\CrearCalendarioDTO.cs",
-              "RelativeDocumentMoniker": "Entidades\\DTOs\\DTO\\CalendarioDTO\\CrearCalendarioDTO.cs",
-              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Entidades\\DTOs\\DTO\\CalendarioDTO\\CrearCalendarioDTO.cs",
-              "RelativeToolTip": "Entidades\\DTOs\\DTO\\CalendarioDTO\\CrearCalendarioDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T04:44:44.283Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 44,
-              "Title": "TurnoNotificacionDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Entidades\\DTOs\\DTO\\TurnosDTO\\TurnoNotificacionDTO.cs",
-              "RelativeDocumentMoniker": "Entidades\\DTOs\\DTO\\TurnosDTO\\TurnoNotificacionDTO.cs",
-              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Entidades\\DTOs\\DTO\\TurnosDTO\\TurnoNotificacionDTO.cs",
-              "RelativeToolTip": "Entidades\\DTOs\\DTO\\TurnosDTO\\TurnoNotificacionDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABBAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-09T05:52:26.552Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 46,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "appsettings.Development.json",
-              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\appsettings.Development.json",
-              "RelativeToolTip": "appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-06-10T05:57:32.095Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 45,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-06-07T09:40:39.84Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 47,
-              "Title": "IPasswordHasher.cs",
-              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Interfaces\\IPasswordHasher.cs",
-              "RelativeDocumentMoniker": "Interfaces\\IPasswordHasher.cs",
-              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Interfaces\\IPasswordHasher.cs",
-              "RelativeToolTip": "Interfaces\\IPasswordHasher.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-10T05:53:32.739Z"
+              "WhenOpened": "2025-07-08T03:18:21.709Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
-              "Title": "20250609073833_FixTurnosOSDuplicada.cs",
-              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Migrations\\20250609073833_FixTurnosOSDuplicada.cs",
-              "RelativeDocumentMoniker": "Migrations\\20250609073833_FixTurnosOSDuplicada.cs",
-              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Migrations\\20250609073833_FixTurnosOSDuplicada.cs",
-              "RelativeToolTip": "Migrations\\20250609073833_FixTurnosOSDuplicada.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 16,
+              "Title": "AsistenciaDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Entidades\\DTOs\\DTO\\TurnosDTO\\AsistenciaDTO.cs",
+              "RelativeDocumentMoniker": "Entidades\\DTOs\\DTO\\TurnosDTO\\AsistenciaDTO.cs",
+              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Entidades\\DTOs\\DTO\\TurnosDTO\\AsistenciaDTO.cs",
+              "RelativeToolTip": "Entidades\\DTOs\\DTO\\TurnosDTO\\AsistenciaDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-09T07:38:34.118Z"
+              "WhenOpened": "2025-07-08T03:18:00.178Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
-              "Title": "ICalendarioService.cs",
-              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Interfaces\\ICalendarioService.cs",
-              "RelativeDocumentMoniker": "Interfaces\\ICalendarioService.cs",
-              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Interfaces\\ICalendarioService.cs",
-              "RelativeToolTip": "Interfaces\\ICalendarioService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAkAAAAcAAAAAAAAAA==",
+              "DocumentIndex": 13,
+              "Title": "TurnoController.cs",
+              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Controllers\\TurnoController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TurnoController.cs",
+              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Controllers\\TurnoController.cs",
+              "RelativeToolTip": "Controllers\\TurnoController.cs",
+              "ViewState": "AgIAAG8AAAAAAAAAAAAQwI4AAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T03:58:07.318Z"
+              "WhenOpened": "2025-07-08T03:17:36.674Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
-              "Title": "20250607043657_nulleableElTurno.cs",
-              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Migrations\\20250607043657_nulleableElTurno.cs",
-              "RelativeDocumentMoniker": "Migrations\\20250607043657_nulleableElTurno.cs",
-              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Migrations\\20250607043657_nulleableElTurno.cs",
-              "RelativeToolTip": "Migrations\\20250607043657_nulleableElTurno.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 15,
+              "Title": "TurnoService.cs",
+              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Servicios\\TurnoService.cs",
+              "RelativeDocumentMoniker": "Servicios\\TurnoService.cs",
+              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Servicios\\TurnoService.cs",
+              "RelativeToolTip": "Servicios\\TurnoService.cs",
+              "ViewState": "AgIAAHcAAAAAAAAAAAAmwJQAAABXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T04:36:57.761Z"
+              "WhenOpened": "2025-07-07T13:21:27.832Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
-              "Title": "20250424041847_fixdni.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Migrations\\20250424041847_fixdni.Designer.cs",
-              "RelativeDocumentMoniker": "Migrations\\20250424041847_fixdni.Designer.cs",
-              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Migrations\\20250424041847_fixdni.Designer.cs",
-              "RelativeToolTip": "Migrations\\20250424041847_fixdni.Designer.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAjwBAAAAAFAAAAAAAAAA==",
+              "DocumentIndex": 14,
+              "Title": "TokenService.cs",
+              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Servicios\\TokenService.cs",
+              "RelativeDocumentMoniker": "Servicios\\TokenService.cs",
+              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Servicios\\TokenService.cs",
+              "RelativeToolTip": "Servicios\\TokenService.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAASwBMAAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T03:59:47.464Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 50,
-              "Title": "CalendarioDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Entidades\\DTOs\\DTO\\CalendarioDTO\\CalendarioDTO.cs",
-              "RelativeDocumentMoniker": "Entidades\\DTOs\\DTO\\CalendarioDTO\\CalendarioDTO.cs",
-              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Entidades\\DTOs\\DTO\\CalendarioDTO\\CalendarioDTO.cs",
-              "RelativeToolTip": "Entidades\\DTOs\\DTO\\CalendarioDTO\\CalendarioDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T03:40:41.02Z"
+              "WhenOpened": "2025-07-07T13:21:27.089Z"
             }
           ]
         }

@@ -9,7 +9,6 @@ namespace Agenda.Base
         public AppDbContext(DbContextOptions options) : base(options) { }
                 
         public DbSet<Usuario> Usuarios { get; set; }
-
         public DbSet<Odontologo> Odontologos { get; set; }
         public DbSet<Paciente> Pacientes { get; set; }
         public DbSet<ObraSocial> ObrasSociales { get; set; }
@@ -95,6 +94,9 @@ namespace Agenda.Base
                 new Rol { Id = 1, Nombre = "Administrador" },
                 new Rol { Id = 2, Nombre = "Odontologo" }
             );
+
+
+
 
 
         }

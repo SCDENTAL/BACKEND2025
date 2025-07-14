@@ -107,19 +107,15 @@ namespace Agenda.Controllers
 
         [Authorize]
         [HttpPut("{id}/asistencia")]
-        public async Task<IActionResult> MarcarAsistencia(int id, [FromBody] MarcarAsistenciaDTO dto)
+        public async Task<IActionResult> MarcarAsistencia(int id, [FromBody] AsistenciaDTO dto)
         {
-            var usuarioId = ObtenerUsuarioId();
-            var rol = User.FindFirstValue(ClaimTypes.Role);  
+            var usuarioId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier).Value);
+            var rol = User.FindFirst(ClaimTypes.Role)?.Value ?? "Administrador";
 
-            var result = await _turnoService.MarcarAsistenciaAsync(id, dto.Asistio, usuarioId, rol);
+            var resultado = await _turnoService.MarcarAsistenciaAsync(id, dto.Asistio, usuarioId, rol);
+            if (!resultado) return BadRequest("No se pudo actualizar la asistencia.");
 
-            if (!result)
-                return BadRequest("No se pudo marcar la asistencia.");
-
-            return Ok(new { mensaje = "Asistencia registrada correctamente" });
-
-
+            return Ok(new { mensaje = "Asistencia actualizada correctamente" });
         }
 
         [Authorize]

@@ -1,9 +1,10 @@
-﻿using Agenda.Entidades.DTOs.DTO.ObrasSocialesDTO;
+﻿using Agenda.Base;
 using Agenda.Entidades;
-using Agenda.Base;
-using Microsoft.EntityFrameworkCore;
-using Agenda.Interfaces;
 using Agenda.Entidades.DTOs;
+using Agenda.Entidades.DTOs.DTO.ObrasSocialesDTO;
+using Agenda.Exceptions;
+using Agenda.Interfaces;
+using Microsoft.EntityFrameworkCore;
 
 namespace Agenda.Servicios
 {
@@ -28,10 +29,21 @@ namespace Agenda.Servicios
 
         public async Task<bool> EditarAsync(int id, EditarObraSocialDTO dto, int usuarioId)
         {
-            var obra = await _context.ObrasSociales.FirstOrDefaultAsync(x => x.Id == id && x.UsuarioId == usuarioId);
-            if (obra == null) return false;
+            var obra = await _context.ObrasSociales
+                .FirstOrDefaultAsync(x => x.Id == id && x.UsuarioId == usuarioId);
 
-            obra.Nombre = dto.Nombre;
+            if (obra == null)
+                throw new BadRequestException("No se encontró la obra social.");
+
+            var nombreNuevo = dto.Nombre.Trim();
+
+            var nombreDuplicado = await _context.ObrasSociales
+                .AnyAsync(x => x.UsuarioId == usuarioId && x.Id != id && x.Nombre.ToLower() == nombreNuevo.ToLower());
+
+            if (nombreDuplicado)
+                throw new BadRequestException("Ya existe otra obra social con ese nombre.");
+
+            obra.Nombre = nombreNuevo;
             await _context.SaveChangesAsync();
             return true;
         }
@@ -39,9 +51,19 @@ namespace Agenda.Servicios
 
         public async Task<ObraSocialDTO> CrearAsync(CrearObraSocialDTO dto, int usuarioId)
         {
-            var obra = new ObraSocial { Nombre = dto.Nombre, UsuarioId = usuarioId };
+            var nombre = dto.Nombre.Trim();
+
+            var existe = await _context.ObrasSociales
+                .AnyAsync(x => x.UsuarioId == usuarioId && x.Nombre.ToLower() == nombre.ToLower());
+
+            if (existe)
+                throw new BadRequestException("Ya existe una obra social con ese nombre.");
+
+            var obra = new ObraSocial { Nombre = nombre, UsuarioId = usuarioId };
+
             _context.ObrasSociales.Add(obra);
             await _context.SaveChangesAsync();
+
             return new ObraSocialDTO { Id = obra.Id, Nombre = obra.Nombre };
         }
 

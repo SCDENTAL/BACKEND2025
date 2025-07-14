@@ -194,7 +194,8 @@ public class TurnoService : ITurnoService
         else // administrador
         {
             turno = await _context.Turnos
-                .FirstOrDefaultAsync(t => t.Id == turnoId && t.UsuarioId == usuarioId);
+                .Include(t => t.Calendario)
+                 .FirstOrDefaultAsync(t => t.Id == turnoId && t.Calendario.IdUsuario == usuarioId);
         }
 
         if (turno == null || turno.Disponible)

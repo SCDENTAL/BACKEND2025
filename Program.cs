@@ -1,5 +1,6 @@
 using Agenda.Base;
 using Agenda.Interfaces;
+using Agenda.Middleware;
 using Agenda.Servicios;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
@@ -93,12 +94,14 @@ builder.Services.AddScoped<IPacienteService, PacienteService>();
 var app = builder.Build();
 
 
-
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseCustomExceptionHandler(); 
+
 
 
 

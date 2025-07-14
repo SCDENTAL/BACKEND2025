@@ -423,7 +423,7 @@
       },
       {
         "Name": "dto",
-        "Type": "Agenda.Entidades.DTOs.DTO.TurnosDTO.MarcarAsistenciaDTO",
+        "Type": "Agenda.Entidades.DTOs.DTO.TurnosDTO.AsistenciaDTO",
         "IsRequired": true
       }
     ],

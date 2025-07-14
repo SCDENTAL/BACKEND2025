@@ -10,8 +10,7 @@
 
         public string Email { get; set; }
 
-		public int ObraSocialId { get; set; }
-
-        public string ObraSocial { get; set;}
+		public int? ObraSocialId { get; set; }
+        
 	}
 }
