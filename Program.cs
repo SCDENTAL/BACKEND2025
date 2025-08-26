@@ -10,6 +10,12 @@ using System.Text;
 var builder = WebApplication.CreateBuilder(args);
 
 
+builder.Configuration
+    .SetBasePath(Directory.GetCurrentDirectory())
+    .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
+    .AddEnvironmentVariables(); // <-- ESTO es lo nuevo y necesario
+
+
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -17,6 +23,7 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<AppDbContext>
     (options => options.UseSqlServer(builder.Configuration.GetConnectionString("Conexion")));
+
 
 builder.Services.AddSwaggerGen(c =>
 {
@@ -28,8 +35,7 @@ builder.Services.AddSwaggerGen(c =>
         Type = Microsoft.OpenApi.Models.SecuritySchemeType.ApiKey,
         Scheme = "Bearer",
         BearerFormat = "JWT",
-        In = Microsoft.OpenApi.Models.ParameterLocation.Header,
-        Description = "Pegï¿½ tu JWT sin escribir 'Bearer '. Swagger lo agrega automï¿½ticamente."
+        In = Microsoft.OpenApi.Models.ParameterLocation.Header,        
     });
 
     c.AddSecurityRequirement(new Microsoft.OpenApi.Models.OpenApiSecurityRequirement
@@ -68,12 +74,12 @@ builder.Services.AddAuthentication("Bearer")
 
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowAll", policy =>
+    options.AddPolicy("AllowFrontend", policy =>
     {
-        policy.WithOrigins("http://localhost:4200")
+        policy.WithOrigins("https://frontend-2025-woad.vercel.app",
+             "https://frontend-2025-kohl.vercel.app")
               .AllowAnyHeader()
-              .AllowAnyMethod()
-              .AllowCredentials(); 
+              .AllowAnyMethod();
     });
 });
 
@@ -82,11 +88,20 @@ builder.Services.AddCors(options =>
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<TokenService,TokenService>();
 builder.Services.AddScoped<ICalendarioService, CalendarioService>();
-
 builder.Services.AddScoped<ITurnoService, TurnoService>();
 builder.Services.AddScoped<IObrasSocialesService, ObraSocialService>();
 builder.Services.AddScoped<IOdontologoService, OdontologoService>();
 builder.Services.AddScoped<IPacienteService, PacienteService>();
+builder.Services.AddScoped<TwilioService>();
+builder.Services.AddScoped<RecordatorioTurnoService>();
+builder.Services.AddHostedService<RecordatorioBackgroundService>();
+
+
+Console.WriteLine("Cadena conexión: " + builder.Configuration.GetConnectionString("Conexion"));
+Console.WriteLine("Jwt Key: " + builder.Configuration["Jwt:Key"]);
+Console.WriteLine("Issuer: " + builder.Configuration["Jwt:Issuer"]);
+Console.WriteLine("Audience: " + builder.Configuration["Jwt:Audience"]);
+
 
 
 
@@ -94,11 +109,10 @@ builder.Services.AddScoped<IPacienteService, PacienteService>();
 var app = builder.Build();
 
 
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+
+app.UseSwagger();
+app.UseSwaggerUI();
+
 
 app.UseCustomExceptionHandler(); 
 
@@ -117,8 +131,10 @@ app.Use(async (context, next) =>
     }
 });
 
+app.MapGet("/", () => "Backend de SC Dental funcionando desde Azure");
 
-app.UseCors("AllowAll");
+
+app.UseCors("AllowFrontend");
 app.UseHttpsRedirection();
 
 app.UseAuthentication();

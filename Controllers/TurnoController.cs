@@ -152,6 +152,15 @@ namespace Agenda.Controllers
 
         }
 
+        [HttpPost("asignar-masivo")]
+        public async Task<IActionResult> AsignarTurnosMasivos()
+        {
+            var usuarioId = 1; // o podés tomarlo del token si ya tenés auth
+            var cantidad = await _turnoService.AsignarTurnosMasivosAsync(usuarioId);
+            return Ok(new { mensaje = $"Se asignaron {cantidad} turnos masivos correctamente." });
+        }
+
+
 
 
         [HttpPost("crear/{calendarioId}")]

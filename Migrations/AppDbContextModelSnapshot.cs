@@ -238,6 +238,9 @@ namespace Agenda.Migrations
                     b.Property<int?>("IdPaciente")
                         .HasColumnType("int");
 
+                    b.Property<bool>("MensajeConfirmacionEnviado")
+                        .HasColumnType("bit");
+
                     b.Property<int?>("ObraSocialId")
                         .HasColumnType("int");
 

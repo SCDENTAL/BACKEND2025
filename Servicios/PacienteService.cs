@@ -1,6 +1,7 @@
 ﻿using Agenda.Base;
-using Agenda.Entidades.DTOs.DTO.PacientesDTO;
 using Agenda.Entidades;
+using Agenda.Entidades.DTOs.DTO.PacientesDTO;
+using Agenda.Exceptions;
 using Agenda.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
@@ -36,10 +37,11 @@ namespace Agenda.Servicios
 			var paciente = await _context.Pacientes
 				.Include(p => p.ObraSocial)
 				.FirstOrDefaultAsync(p => p.Id == id && p.UsuarioId == usuarioId);
+			
+            if (paciente == null)
+                throw new NotFoundException("Paciente no encontrado.");
 
-			if (paciente == null) return null;
-
-			return new PacienteDTO
+            return new PacienteDTO
 			{
 				Id = paciente.Id,
 				Nombre = paciente.Nombre,
@@ -82,16 +84,17 @@ namespace Agenda.Servicios
         {
             var paciente = await _context.Pacientes
                 .FirstOrDefaultAsync(p => p.Id == id && p.UsuarioId == usuarioId);
-
-            if (paciente == null) return false;
+            
+			if (paciente == null)
+				throw new BadRequestException("El paciente no existe");
+			
 
             paciente.Nombre = dto.Nombre;
             paciente.Apellido = dto.Apellido;
             paciente.Dni = dto.Dni;
             paciente.Telefono = dto.Telefono;
             paciente.Email = dto.Email;
-
-            // Asegurarse que la obra social exista (opcional)
+            
             var obraSocialExiste = await _context.ObrasSociales
                 .AnyAsync(o => o.Id == dto.ObraSocialId && o.UsuarioId == usuarioId);
 

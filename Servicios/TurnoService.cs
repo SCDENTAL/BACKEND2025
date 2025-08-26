@@ -43,8 +43,6 @@ public class TurnoService : ITurnoService
             })
             .ToListAsync();
     }
-
-
     public async Task<List<TurnoDTO>> ObtenerTurnosDelOdontologoAsync(int usuarioIdOdontologo)
     {        
         var odontologo = await _context.Odontologos
@@ -74,10 +72,6 @@ public class TurnoService : ITurnoService
             NombreObraSocial = t.ObraSocial?.Nombre
         }).ToList();
     }
-
-
-
-
     public async Task<List<TurnoDTO>> ObtenerTurnosAsync(int calendarioId, int usuarioId)
     {
         var calendario = await ObtenerCalendarioEntidadAsync(calendarioId, usuarioId);
@@ -105,7 +99,6 @@ public class TurnoService : ITurnoService
             NombreObraSocial = t.ObraSocial?.Nombre
         }).ToList();
     }
-
     public async Task<ResTurnosFiltrados> FiltrarPorFechasAsync(int calendarioId, DateTime fechaInicio, DateTime fechaFin, int usuarioId)
     {
         var turnos = await _context.Turnos
@@ -127,12 +120,13 @@ public class TurnoService : ITurnoService
             CantidadHorarios = (await ObtenerCalendarioEntidadAsync(calendarioId, usuarioId))?.CantidadHorarios ?? 0
         };
     }
-
     public async Task<ResultadoOperacion> ReservarTurnoAsync(int turnoId, ReservarTurnoDTO dto, int usuarioId)
     {
         var turno = await _context.Turnos.FirstOrDefaultAsync(t => t.Id == turnoId && t.UsuarioId == usuarioId);
-        if (turno == null) return new ResultadoOperacion(false, "Turno no encontrado o no pertenece al usuario");
-        if (!turno.Disponible) return new ResultadoOperacion(false, "El turno no está disponible");
+        if (turno == null) 
+            return new ResultadoOperacion(false, "Turno no encontrado o no pertenece al usuario");
+        if (!turno.Disponible) 
+            return new ResultadoOperacion(false, "El turno no está disponible");
 
         if (!await _context.Pacientes.AnyAsync(p => p.Id == dto.IdPaciente && p.UsuarioId == usuarioId))
             return new ResultadoOperacion(false, "Paciente no encontrado o no pertenece al usuario");
@@ -145,7 +139,6 @@ public class TurnoService : ITurnoService
         await _context.SaveChangesAsync();
         return new ResultadoOperacion(true, string.Empty);
     }
-
     public async Task<ResultadoOperacion> EditarTurnoAsync(int turnoId, EditarTurnosDTO dto, int usuarioId)
     {
         var turno = await _context.Turnos
@@ -166,7 +159,6 @@ public class TurnoService : ITurnoService
 
         return ResultadoOperacion.Exito();
     }
-
     public async Task<bool> CancelarTurnoAsync(int turnoId, int usuarioId)
     {
         var turno = await _context.Turnos.FirstOrDefaultAsync(t => t.Id == turnoId && t.UsuarioId == usuarioId);
@@ -205,7 +197,6 @@ public class TurnoService : ITurnoService
         await _context.SaveChangesAsync();
         return true;
     }
-
     public async Task CrearTurnosAsync(List<DateTime> fechas, List<TimeSpan> horarios, Calendario calendario)
     {
         foreach (var fecha in fechas)
@@ -221,6 +212,41 @@ public class TurnoService : ITurnoService
 
         await _context.SaveChangesAsync();
     }
+    public async Task<int> AsignarTurnosMasivosAsync(int usuarioId)
+    {
+        var turnosDisponibles = await _context.Turnos
+            .Where(t => t.UsuarioId == usuarioId && t.Disponible == true && t.OdontologoId == null)
+            .ToListAsync();
+
+        var pacientes = await _context.Pacientes.Where(p => p.UsuarioId == usuarioId).ToListAsync();
+        var odontologos = await _context.Odontologos.Where(o => o.AdministradorId == usuarioId).ToListAsync();
+        var obras = await _context.ObrasSociales.Where(o => o.UsuarioId == usuarioId).ToListAsync();
+
+        if (!pacientes.Any() || !odontologos.Any() || !obras.Any())
+        {
+            throw new Exception($"Pacientes: {pacientes.Count}, Odontólogos: {odontologos.Count}, Obras: {obras.Count}");
+        }
+
+        var random = new Random();
+        int asignados = 0;
+
+        foreach (var turno in turnosDisponibles)
+        {
+            turno.IdPaciente = pacientes[random.Next(pacientes.Count)].Id;
+            turno.OdontologoId = odontologos[random.Next(odontologos.Count)].Id;
+            turno.ObraSocialId = obras[random.Next(obras.Count)].Id;
+            turno.Disponible = false;
+            turno.Asistio = null;
+            asignados++;
+        }
+
+        await _context.SaveChangesAsync();
+        return asignados;
+    }
+
+
+
+
 
     private List<TurnoDTO> MapDia(List<Turno> turnos, DayOfWeek dia) =>
         turnos.Where(t => t.Fecha.DayOfWeek == dia)

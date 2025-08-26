@@ -40,5 +40,7 @@ public class Turno
     public int? ObraSocialId { get; set; }
     public ObraSocial? ObraSocial { get; set; }
 
+    public bool MensajeConfirmacionEnviado { get; set; } = false;
+
 
 }

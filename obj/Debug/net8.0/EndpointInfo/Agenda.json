@@ -67,37 +67,6 @@
         }
       }
     },
-    "/api/Auth/crear-odontologo": {
-      "post": {
-        "tags": [
-          "Auth"
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/RegistroDto"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/RegistroDto"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/RegistroDto"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
     "/api/Calendario": {
       "get": {
         "tags": [
@@ -689,6 +658,18 @@
         }
       }
     },
+    "/api/TestRecordatorio": {
+      "get": {
+        "tags": [
+          "TestRecordatorio"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Turno/mis-turnos-hoy": {
       "get": {
         "tags": [
@@ -985,6 +966,18 @@
             }
           }
         },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Turno/asignar-masivo": {
+      "post": {
+        "tags": [
+          "Turno"
+        ],
         "responses": {
           "200": {
             "description": "OK"
@@ -1412,7 +1405,6 @@
     "securitySchemes": {
       "Bearer": {
         "type": "apiKey",
-        "description": "Peg� tu JWT sin escribir 'Bearer '. Swagger lo agrega autom�ticamente.",
         "name": "Authorization",
         "in": "header"
       }

@@ -29,5 +29,8 @@ namespace Agenda.Interfaces
         Task<ResultadoOperacion> ReservarTurnoAsync(int turnoId, ReservarTurnoDTO dto, int usuarioId);
 
 
+        Task<int> AsignarTurnosMasivosAsync(int usuarioId);
+
+
     }
 }
