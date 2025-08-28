@@ -1,0 +1,149 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\servicios\\turnoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:servicios\\turnoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\controllers\\turnocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:controllers\\turnocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\controllers\\calendariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:controllers\\calendariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\servicios\\calendarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:servicios\\calendarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\interfaces\\icalendarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:interfaces\\icalendarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|c:\\users\\mateo\\desktop\\work\\backend2025\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8D610B0A-F7EE-4937-A7B1-2CD54EBF5F6A}|Agenda.csproj|solutionrelative:appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TurnoController.cs",
+              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Controllers\\TurnoController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TurnoController.cs",
+              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Controllers\\TurnoController.cs",
+              "RelativeToolTip": "Controllers\\TurnoController.cs",
+              "ViewState": "AgIAAJIAAAAAAAAAAAAwwKYAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T09:06:41.359Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CalendarioController.cs",
+              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Controllers\\CalendarioController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CalendarioController.cs",
+              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Controllers\\CalendarioController.cs",
+              "RelativeToolTip": "Controllers\\CalendarioController.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAowE4AAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T08:31:06.527Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ICalendarioService.cs",
+              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Interfaces\\ICalendarioService.cs",
+              "RelativeDocumentMoniker": "Interfaces\\ICalendarioService.cs",
+              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Interfaces\\ICalendarioService.cs",
+              "RelativeToolTip": "Interfaces\\ICalendarioService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T08:30:04.965Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TurnoService.cs",
+              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Servicios\\TurnoService.cs",
+              "RelativeDocumentMoniker": "Servicios\\TurnoService.cs",
+              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Servicios\\TurnoService.cs",
+              "RelativeToolTip": "Servicios\\TurnoService.cs",
+              "ViewState": "AgIAAOEAAAAAAAAAAAAIwP0AAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-26T19:24:05.279Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CalendarioService.cs",
+              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Servicios\\CalendarioService.cs",
+              "RelativeDocumentMoniker": "Servicios\\CalendarioService.cs",
+              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Servicios\\CalendarioService.cs",
+              "RelativeToolTip": "Servicios\\CalendarioService.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAswE4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-26T19:23:52.224Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAowFYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-26T19:20:18.726Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "appsettings.Development.json",
+              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\appsettings.Development.json",
+              "RelativeToolTip": "appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-08-26T19:00:35.429Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\Mateo\\Desktop\\Work\\BACKEND2025\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-08-26T19:00:30.044Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -13,7 +13,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Configuration
     .SetBasePath(Directory.GetCurrentDirectory())
     .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
-    .AddEnvironmentVariables(); // <-- ESTO es lo nuevo y necesario
+    .AddEnvironmentVariables(); 
 
 
 builder.Services.AddControllers();
@@ -77,7 +77,8 @@ builder.Services.AddCors(options =>
     options.AddPolicy("AllowFrontend", policy =>
     {
         policy.WithOrigins("https://frontend-2025-woad.vercel.app",
-             "https://frontend-2025-kohl.vercel.app")
+             "https://frontend-2025-kohl.vercel.app",
+              "http://localhost:4200")
               .AllowAnyHeader()
               .AllowAnyMethod();
     });

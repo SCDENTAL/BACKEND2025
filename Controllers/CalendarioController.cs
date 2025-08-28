@@ -72,16 +72,17 @@ namespace Agenda.API.Controllers
             return NoContent();
         }
 
-        [HttpDelete]
-        public async Task<IActionResult> Eliminar()
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> Eliminar(int id)
         {
-            var usuarioId = ObtenerUsuarioId(); 
-            var resultado = await _service.EliminarAsync(usuarioId);
+            var usuarioId = ObtenerUsuarioId();
+            var resultado = await _service.EliminarAsync(id, usuarioId);
 
             if (!resultado)
-                return NotFound("No se encontró un calendario para este usuario.");
+                return NotFound("No se encontró un calendario con ese ID para este usuario.");
 
             return NoContent();
         }
+
     }
 }

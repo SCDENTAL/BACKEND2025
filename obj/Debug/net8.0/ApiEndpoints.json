@@ -1,5 +1,23 @@
 [
   {
+    "ContainingType": "Program\u002B\u003C\u003Ec",
+    "Method": "\u003C\u003CMain\u003E$\u003Eb__0_5",
+    "RelativePath": "",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "Agenda.Controllers.AuthController",
     "Method": "Login",
     "RelativePath": "api/Auth/login",
@@ -79,16 +97,6 @@
   },
   {
     "ContainingType": "Agenda.API.Controllers.CalendarioController",
-    "Method": "Eliminar",
-    "RelativePath": "api/Calendario",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Agenda.API.Controllers.CalendarioController",
     "Method": "ObtenerPorId",
     "RelativePath": "api/Calendario/{id}",
     "HttpMethod": "GET",
@@ -129,6 +137,22 @@
       {
         "Name": "dto",
         "Type": "Agenda.Entidades.DTOs.DTO.CalendarioDTO.CrearCalendarioDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Agenda.API.Controllers.CalendarioController",
+    "Method": "Eliminar",
+    "RelativePath": "api/Calendario/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],
@@ -613,6 +637,16 @@
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Agenda.Controllers.HealthController",
+    "Method": "Get",
+    "RelativePath": "health",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   }
 ]

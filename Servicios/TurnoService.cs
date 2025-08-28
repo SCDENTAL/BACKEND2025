@@ -245,9 +245,6 @@ public class TurnoService : ITurnoService
     }
 
 
-
-
-
     private List<TurnoDTO> MapDia(List<Turno> turnos, DayOfWeek dia) =>
         turnos.Where(t => t.Fecha.DayOfWeek == dia)
               .Select(t => new TurnoDTO
