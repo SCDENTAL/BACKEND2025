@@ -5,6 +5,25 @@
     "version": "v1"
   },
   "paths": {
+    "/": {
+      "get": {
+        "tags": [
+          "Agenda"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/Auth/registro": {
       "post": {
         "tags": [
@@ -149,16 +168,6 @@
             }
           }
         }
-      },
-      "delete": {
-        "tags": [
-          "Calendario"
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
       }
     },
     "/api/Calendario/{id}": {
@@ -239,6 +248,27 @@
             "description": "OK"
           }
         }
+      },
+      "delete": {
+        "tags": [
+          "Calendario"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
       }
     },
     "/api/Calendario/{id}/extender": {
@@ -276,6 +306,18 @@
             }
           }
         },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/health": {
+      "get": {
+        "tags": [
+          "Health"
+        ],
         "responses": {
           "200": {
             "description": "OK"

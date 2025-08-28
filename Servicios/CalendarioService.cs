@@ -71,10 +71,15 @@ namespace Agenda.Servicios
             if (dto.HoraFinTurnos < 1 || dto.HoraFinTurnos > 24)
                 throw new ArgumentException("La hora de fin debe estar entre 1 y 23.");
 
-            var yaExiste = await _context.Calendarios.AnyAsync(c => c.IdUsuario == usuarioId);
-            if (yaExiste)
-                throw new InvalidOperationException("El usuario ya tiene un calendario.");
-            
+            //var yaExiste = await _context.Calendarios.AnyAsync(c => c.IdUsuario == usuarioId);
+            //if (yaExiste)
+            //    throw new InvalidOperationException("El usuario ya tiene un calendario.");
+
+            var existeNombre = await _context.Calendarios.AnyAsync(c => c.IdUsuario == usuarioId && c.Nombre == dto.Nombre);
+
+            if (existeNombre)
+                throw new InvalidOperationException("Ya existe un calendario con ese nombre.");
+
             var calendario = new Calendario
             {
                 Nombre = dto.Nombre,
@@ -161,11 +166,27 @@ namespace Agenda.Servicios
             return true;
         }
 
-        public async Task<bool> EliminarAsync(int usuarioId)
+        //public async Task<bool> EliminarAsync(int usuarioId)
+        //{
+        //    var calendario = await _context.Calendarios
+        //        .Include(c => c.Turnos)
+        //        .FirstOrDefaultAsync(c => c.IdUsuario == usuarioId);
+
+        //    if (calendario == null)
+        //        return false;
+
+        //    _context.Turnos.RemoveRange(calendario.Turnos);
+        //    _context.Calendarios.Remove(calendario);
+
+        //    await _context.SaveChangesAsync();
+        //    return true;
+        //}
+
+        public async Task<bool> EliminarAsync(int id, int usuarioId)
         {
             var calendario = await _context.Calendarios
                 .Include(c => c.Turnos)
-                .FirstOrDefaultAsync(c => c.IdUsuario == usuarioId);
+                .FirstOrDefaultAsync(c => c.Id == id && c.IdUsuario == usuarioId);
 
             if (calendario == null)
                 return false;
@@ -176,6 +197,7 @@ namespace Agenda.Servicios
             await _context.SaveChangesAsync();
             return true;
         }
+
 
         public async Task<bool> ExtenderCalendarioAsync(int id, ExtenderCalendarioDTO dto, int usuarioId)
         {
